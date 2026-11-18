@@ -1,0 +1,8 @@
+{
+  "name": "silknet",
+  "version": "0.1.0",
+  "description": "SilkNet v1 LoRa mesh frames: AES-128-CCM, duty cycle, frame counters, ETX routing",
+  "frameworks": "*",
+  "platforms": "*",
+  "build": { "flags": ["-std=gnu++17"], "includeDir": "include", "srcDir": "src" }
+}

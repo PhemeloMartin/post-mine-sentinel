@@ -1,0 +1,8 @@
+{
+  "name": "sentinel_core",
+  "version": "0.1.0",
+  "description": "Portable S.P.I.D.E.R. DSP: seismic features, STA/LTA trigger, MLP inference",
+  "frameworks": "*",
+  "platforms": "*",
+  "build": { "flags": ["-std=gnu++17"], "includeDir": "include", "srcDir": "src" }
+}
