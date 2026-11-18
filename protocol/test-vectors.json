@@ -1,0 +1,98 @@
+{
+  "fips197": {
+    "key": "000102030405060708090a0b0c0d0e0f",
+    "plaintext": "00112233445566778899aabbccddeeff",
+    "ciphertext": "69c4e0d86a7b0430d8cdb78070b4c55a"
+  },
+  "rfc3610_1": {
+    "key": "c0c1c2c3c4c5c6c7c8c9cacbcccdcecf",
+    "nonce": "00000003020100a0a1a2a3a4a5",
+    "aad": "0001020304050607",
+    "plaintext": "08090a0b0c0d0e0f101112131415161718191a1b1c1d1e",
+    "output": "588c979a61c663d2f066d0c2c0f989806d5f6b61dac38417e8d12cfdf926e0",
+    "tag_len": 8
+  },
+  "site_key": "2b7e151628aed2a6abf7158809cf4f3c",
+  "frames": [
+    {
+      "name": "detection-footsteps",
+      "type": 1,
+      "flags": 0,
+      "site_id": 7,
+      "node_id": 5,
+      "counter": 1001,
+      "node_key": "af4af6c438924e5edee208b174ff11cb",
+      "payload": "6afe12fc01f01605965700000000",
+      "frame": "110000070005000003e915e7d8cde1a9ad21ab057e829b1613128fee01d1c13c",
+      "decoded": {
+        "window_start": 1795035900,
+        "class_id": 1,
+        "p_threat_u8": 240,
+        "snr_db": 22.4,
+        "arrival_ms": 1430,
+        "battery_pct": 87,
+        "status": 0
+      }
+    },
+    {
+      "name": "benign-animal-relayed",
+      "type": 4,
+      "flags": 6,
+      "site_id": 7,
+      "node_id": 21,
+      "counter": 77,
+      "node_key": "784ae331747ffe50cb18850f3d89d964",
+      "payload": "6afe1300051f0f03345b00000000",
+      "frame": "1406000700150000004d6f0da878eaee3ece7a6416a997207ffe5f3bf2b492f6",
+      "decoded": {
+        "window_start": 1795035904,
+        "class_id": 5,
+        "p_threat_u8": 31,
+        "snr_db": 15.0,
+        "arrival_ms": 820,
+        "battery_pct": 91,
+        "status": 0
+      }
+    },
+    {
+      "name": "tamper-last-gasp",
+      "type": 3,
+      "flags": 1,
+      "site_id": 7,
+      "node_id": 21,
+      "counter": 78,
+      "node_key": "784ae331747ffe50cb18850f3d89d964",
+      "payload": "6afe130600ff0000005a01000000",
+      "frame": "1301000700150000004ee03d695989e918f2786d7c00379c6aae9e6d179d6f7d",
+      "decoded": {
+        "window_start": 1795035910,
+        "class_id": 0,
+        "p_threat_u8": 255,
+        "snr_db": 0,
+        "arrival_ms": 0,
+        "battery_pct": 90,
+        "status": 1
+      }
+    },
+    {
+      "name": "heartbeat",
+      "type": 0,
+      "flags": 0,
+      "site_id": 2,
+      "node_id": 1,
+      "counter": 4000000000,
+      "node_key": "ec25bb8ad3c1c5ff12839137c3671204",
+      "payload": "6afe11d000000000004002000000",
+      "frame": "100000020001ee6b280026bf4ed77d282c23942e3ffefc63cd5061c8fe6dba7c",
+      "decoded": {
+        "window_start": 1795035600,
+        "class_id": 0,
+        "p_threat_u8": 0,
+        "snr_db": 0,
+        "arrival_ms": 0,
+        "battery_pct": 64,
+        "status": 2
+      }
+    }
+  ]
+}
