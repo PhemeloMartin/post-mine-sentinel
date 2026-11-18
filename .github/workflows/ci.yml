@@ -1,0 +1,191 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ------------------------------------------------------------------ data & protocol contracts
+  contracts:
+    name: Data register + protocol vectors
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -e ml cryptography
+      - name: Validate mine register (fails on duplicate/misplaced coordinates)
+        run: python data/scripts/build_mines.py --as-of 2026
+      - name: Protocol vectors are reproducible (no drift between generator and committed files)
+        run: |
+          python protocol/gen_vectors.py
+          git diff --exit-code protocol/test-vectors.json firmware/spider-node/test/golden/silknet_vectors.h
+
+  ml:
+    name: ML / analytics (Python)
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: ml } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -e ".[dev]"
+      - run: ruff check sentinel_ml tests
+      - run: pytest
+      - name: Edge model smoke-train + export (headers must compile in the firmware job)
+        run: python scripts/train_edge.py --quick
+
+  api:
+    name: Core API (FastAPI)
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: services/api } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -e ../../ml -e ".[dev]"
+      - run: ruff check app tests
+      - run: pytest
+
+  api-postgres:
+    name: Migrations on PostgreSQL 16 + PostGIS + TimescaleDB
+    runs-on: ubuntu-latest
+    services:
+      db:
+        image: timescale/timescaledb-ha:pg16
+        env: { POSTGRES_USER: sentinel, POSTGRES_PASSWORD: ci-only, POSTGRES_DB: sentinel }
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U sentinel" --health-interval 5s --health-timeout 3s --health-retries 20
+    defaults: { run: { working-directory: services/api } }
+    env:
+      SENTINEL_DATABASE_URL: postgresql+psycopg://sentinel:ci-only@localhost:5432/sentinel
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -e ../../ml -e .
+      - run: alembic upgrade head
+      - name: Audit log is append-only at the database level
+        run: |
+          python - <<'EOF'
+          import sqlalchemy as sa, os
+          e = sa.create_engine(os.environ["SENTINEL_DATABASE_URL"])
+          with e.begin() as c:
+              c.execute(sa.text("INSERT INTO audit_log VALUES (1,'t','ci','admin','x','y','allow',NULL,'g','h')"))
+          try:
+              with e.begin() as c:
+                  c.execute(sa.text("UPDATE audit_log SET actor='mallory'"))
+              raise SystemExit("UPDATE on audit_log was allowed")
+          except sa.exc.DBAPIError:
+              print("audit_log immutability trigger OK")
+          EOF
+
+  case-service:
+    name: Case & evidence service (ASP.NET Core 10)
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: services/case-service } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with: { dotnet-version: "10.0.x" }
+      - run: dotnet restore
+      - run: dotnet build --no-restore -c Release -warnaserror
+      - run: dotnet test --no-build -c Release --logger trx --collect:"XPlat Code Coverage"
+
+  ingest:
+    name: Ingest (Go)
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: services/ingest } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with: { go-version: "1.23" }
+      - run: test -z "$(gofmt -l .)" || (gofmt -d . && exit 1)
+      - run: go vet ./...
+      - run: go test -race -count=1 ./...
+      - run: CGO_ENABLED=0 go build -trimpath ./cmd/ingest
+
+  firmware:
+    name: Firmware (C++ / PlatformIO)
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: firmware/spider-node } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/cache@v4
+        with: { path: ~/.platformio, key: pio-${{ hashFiles('firmware/spider-node/platformio.ini') }} }
+      - run: pip install platformio==6.1.16
+      - name: Host unit tests (AES/CCM conformance, SilkNet vectors, DSP + ML parity with Python)
+        run: pio test -e native
+      - name: Cross-compile for ESP32-S3 (Heltec V3)
+        run: pio run -e heltec_v3
+
+  console:
+    name: 3D command centre (React + Three.js)
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: apps/command-center } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20", cache: npm, cache-dependency-path: apps/command-center/package-lock.json }
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      - name: Browser smoke test (headless Chrome, fails on any console error)
+        env: { SMOKE_CHANNEL: chrome }
+        run: |
+          npx vite preview --port 4173 --strictPort &
+          npx --yes wait-on@8.0.1 -t 30000 http://localhost:4173
+          node scripts/smoke.mjs http://localhost:4173 smoke-artifacts
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: console-screenshots, path: apps/command-center/smoke-artifacts }
+
+  infrastructure:
+    name: IaC (Terraform, Kubernetes, Compose)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+      - run: terraform -chdir=infra/terraform fmt -check -recursive || echo "::warning::run terraform fmt -recursive"
+      - run: terraform -chdir=infra/terraform init -backend=false && terraform -chdir=infra/terraform validate
+      - name: Kustomize renders
+        run: kubectl kustomize infra/k8s/overlays/prod > /dev/null
+      - name: Compose file is valid
+        run: |
+          cp infra/.env.example infra/.env
+          docker compose -f infra/docker-compose.yml --env-file infra/.env config -q
+
+  images:
+    name: Container images build
+    needs: [api, case-service, ingest, console]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - { name: api, context: ., file: services/api/Dockerfile }
+          - { name: case-service, context: services/case-service, file: services/case-service/Dockerfile }
+          - { name: ingest, context: services/ingest, file: services/ingest/Dockerfile }
+          - { name: console, context: ., file: apps/command-center/Dockerfile }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/build-push-action@v6
+        with:
+          context: ${{ matrix.context }}
+          file: ${{ matrix.file }}
+          push: false
+          cache-from: type=gha,scope=${{ matrix.name }}
+          cache-to: type=gha,mode=max,scope=${{ matrix.name }}

@@ -1,0 +1,19 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: sentinel
+labels:
+  - pairs: { app.kubernetes.io/part-of: post-mine-sentinel }
+resources:
+  - namespace.yaml
+  - secrets-keyvault.yaml
+  - api.yaml
+  - ingest.yaml
+  - case-service.yaml
+  - console.yaml
+  - ingress.yaml
+  - network-policies.yaml
+images:
+  - { name: sentinel-api, newName: ghcr.io/phemelomartin/post-mine-sentinel/api, newTag: latest }
+  - { name: sentinel-ingest, newName: ghcr.io/phemelomartin/post-mine-sentinel/ingest, newTag: latest }
+  - { name: sentinel-cases, newName: ghcr.io/phemelomartin/post-mine-sentinel/case-service, newTag: latest }
+  - { name: sentinel-console, newName: ghcr.io/phemelomartin/post-mine-sentinel/console, newTag: latest }

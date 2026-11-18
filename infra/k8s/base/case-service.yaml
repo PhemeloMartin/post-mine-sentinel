@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: case-service
+  labels: { app: case-service }
+spec:
+  replicas: 2
+  selector: { matchLabels: { app: case-service } }
+  template:
+    metadata:
+      labels: { app: case-service, azure.workload.identity/use: "true" }
+    spec:
+      serviceAccountName: sentinel-workload
+      automountServiceAccountToken: false
+      securityContext: { runAsNonRoot: true, seccompProfile: { type: RuntimeDefault } }
+      containers:
+        - name: case-service
+          image: sentinel-cases
+          ports: [{ name: http, containerPort: 8080 }]
+          env:
+            - name: Jwt__Secret
+              valueFrom: { secretKeyRef: { name: sentinel-runtime, key: SENTINEL_JWT_SECRET } }
+            - name: ServiceAuth__Token
+              valueFrom: { secretKeyRef: { name: sentinel-runtime, key: SENTINEL_INGEST_TOKEN } }
+            - name: ConnectionStrings__Cases
+              valueFrom: { secretKeyRef: { name: sentinel-runtime, key: ConnectionStrings__Cases } }
+          readinessProbe: { httpGet: { path: /health/ready, port: http }, periodSeconds: 10 }
+          livenessProbe: { httpGet: { path: /health/live, port: http }, periodSeconds: 20 }
+          resources:
+            requests: { cpu: 100m, memory: 160Mi }
+            limits: { cpu: 500m, memory: 384Mi }
+          securityContext: { allowPrivilegeEscalation: false, readOnlyRootFilesystem: true, capabilities: { drop: [ALL] } }
+          volumeMounts: [{ name: secrets-store, mountPath: /mnt/secrets, readOnly: true }]
+      volumes:
+        - name: secrets-store
+          csi: { driver: secrets-store.csi.k8s.io, readOnly: true, volumeAttributes: { secretProviderClass: sentinel-keyvault } }
+---
+apiVersion: v1
+kind: Service
+metadata: { name: case-service }
+spec:
+  selector: { app: case-service }
+  ports: [{ name: http, port: 8080, targetPort: http }]

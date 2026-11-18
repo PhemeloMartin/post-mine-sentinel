@@ -1,0 +1,102 @@
+name: Release (CD)
+
+# Tag v1.2.3 → build, scan, sign and push images → deploy to staging → manual approval → prod.
+on:
+  push:
+    tags: ["v*.*.*"]
+
+permissions:
+  contents: read
+
+env:
+  REGISTRY: ghcr.io/${{ github.repository_owner }}/post-mine-sentinel
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions: { contents: read, packages: write, id-token: write, attestations: write }
+    strategy:
+      matrix:
+        include:
+          - { name: api, context: ., file: services/api/Dockerfile }
+          - { name: case-service, context: services/case-service, file: services/case-service/Dockerfile }
+          - { name: ingest, context: services/ingest, file: services/ingest/Dockerfile }
+          - { name: console, context: ., file: apps/command-center/Dockerfile }
+    outputs:
+      version: ${{ steps.meta.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with: { registry: ghcr.io, username: "${{ github.actor }}", password: "${{ secrets.GITHUB_TOKEN }}" }
+      - id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ matrix.name }}
+          tags: type=semver,pattern={{version}}
+      - id: build
+        uses: docker/build-push-action@v6
+        with:
+          context: ${{ matrix.context }}
+          file: ${{ matrix.file }}
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          sbom: true          # SPDX SBOM attached to the image
+          provenance: mode=max # SLSA build provenance
+      - name: Block release on critical vulnerabilities
+        uses: aquasecurity/trivy-action@0.28.0
+        with:
+          image-ref: ${{ env.REGISTRY }}/${{ matrix.name }}@${{ steps.build.outputs.digest }}
+          severity: CRITICAL
+          exit-code: "1"
+          ignore-unfixed: true
+      - uses: sigstore/cosign-installer@v3
+      - name: Keyless signature (Sigstore, GitHub OIDC)
+        run: cosign sign --yes ${{ env.REGISTRY }}/${{ matrix.name }}@${{ steps.build.outputs.digest }}
+
+  deploy-staging:
+    needs: publish
+    runs-on: ubuntu-latest
+    environment: staging
+    permissions: { id-token: write, contents: read }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      - uses: azure/aks-set-context@v4
+        with: { resource-group: rg-sentinel-staging, cluster-name: aks-sentinel-staging }
+      - name: Deploy (kustomize, pinned version) and wait for healthy rollouts
+        run: |
+          cd infra/k8s/overlays/prod
+          for s in api ingest cases console; do kustomize edit set image sentinel-$s=:${{ needs.publish.outputs.version }}; done
+          kubectl apply -k .
+          for d in api ingest case-service console; do kubectl -n sentinel rollout status deploy/$d --timeout=300s; done
+      - name: Post-deploy smoke check
+        run: kubectl -n sentinel run smoke --rm -i --restart=Never --image=curlimages/curl -- -fsS http://api:8000/api/v1/ready
+
+  deploy-prod:
+    needs: [publish, deploy-staging]
+    runs-on: ubuntu-latest
+    environment: production # requires reviewer approval (GitHub environment protection rule)
+    permissions: { id-token: write, contents: read }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      - uses: azure/aks-set-context@v4
+        with: { resource-group: rg-sentinel-prod, cluster-name: aks-sentinel-prod }
+      - name: Deploy and verify; roll back automatically if a rollout fails
+        run: |
+          cd infra/k8s/overlays/prod
+          for s in api ingest cases console; do kustomize edit set image sentinel-$s=:${{ needs.publish.outputs.version }}; done
+          kubectl apply -k .
+          for d in api ingest case-service console; do
+            kubectl -n sentinel rollout status deploy/$d --timeout=300s || { kubectl -n sentinel rollout undo deploy/$d; exit 1; }
+          done

@@ -1,0 +1,131 @@
+# Post-Mine Sentinel — full local stack.
+#
+#   cp infra/.env.example infra/.env        # then edit the secrets
+#   docker compose -f infra/docker-compose.yml --env-file infra/.env up --build
+#   docker compose -f infra/docker-compose.yml --env-file infra/.env --profile demo run --rm fieldsim
+#
+# Console http://localhost:8080 · API docs http://localhost:8000/docs · Grafana http://localhost:3000
+name: post-mine-sentinel
+
+x-restart: &restart
+  restart: unless-stopped
+
+services:
+  db:
+    <<: *restart
+    image: timescale/timescaledb-ha:pg16
+    environment:
+      POSTGRES_DB: sentinel
+      POSTGRES_USER: sentinel
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in infra/.env}
+    volumes: [db-data:/home/postgres/pgdata/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sentinel -d sentinel"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    networks: [backend]
+
+  mqtt:
+    <<: *restart
+    image: eclipse-mosquitto:2.0.20
+    volumes:
+      - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - ./mosquitto/acl:/mosquitto/config/acl:ro
+    ports: ["1883:1883"]
+    healthcheck:
+      test: ["CMD-SHELL", "mosquitto_sub -t '$$SYS/broker/uptime' -C 1 -W 3 || exit 1"]
+      interval: 10s
+      retries: 5
+    networks: [field, backend]
+
+  api:
+    <<: *restart
+    build: { context: .., dockerfile: services/api/Dockerfile }
+    environment:
+      SENTINEL_ENV: staging
+      SENTINEL_DATABASE_URL: postgresql+psycopg://sentinel:${POSTGRES_PASSWORD}@db:5432/sentinel
+      SENTINEL_JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET}
+      SENTINEL_INGEST_TOKEN: ${INGEST_TOKEN:?set INGEST_TOKEN}
+      SENTINEL_DEMO_PASSWORD: ${DEMO_PASSWORD:?set DEMO_PASSWORD}
+      SENTINEL_CASE_SERVICE_URL: http://case-service:8080
+      SENTINEL_CORS_ORIGINS: '["http://localhost:8080","http://localhost:5173"]'
+    depends_on:
+      db: { condition: service_healthy }
+    ports: ["8000:8000"]
+    networks: [backend]
+
+  case-service:
+    <<: *restart
+    build: { context: ../services/case-service }
+    environment:
+      ConnectionStrings__Cases: Host=db;Database=sentinel_cases;Username=sentinel;Password=${POSTGRES_PASSWORD}
+      Jwt__Secret: ${JWT_SECRET}
+      ServiceAuth__Token: ${INGEST_TOKEN}
+      ASPNETCORE_ENVIRONMENT: Staging
+    depends_on:
+      db: { condition: service_healthy }
+    ports: ["8081:8080"]
+    networks: [backend]
+
+  ingest:
+    <<: *restart
+    build: { context: ../services/ingest }
+    environment:
+      SENTINEL_INGEST_MQTT_ADDR: mqtt:1883
+      SENTINEL_INGEST_API_URL: http://api:8000/api/v1/ingest/windows
+      SENTINEL_INGEST_TOKEN: ${INGEST_TOKEN}
+      SENTINEL_INGEST_SITES_FILE: /run/secrets/sites.json
+      SENTINEL_INGEST_DLQ: /tmp/dead-letter.jsonl
+    secrets: [sites.json]
+    depends_on: [mqtt, api]
+    networks: [backend]
+
+  console:
+    <<: *restart
+    build: { context: .., dockerfile: apps/command-center/Dockerfile }
+    depends_on: [api]
+    ports: ["8080:8080"]
+    networks: [backend]
+
+  prometheus:
+    <<: *restart
+    image: prom/prometheus:v2.55.1
+    volumes:
+      - ./observability/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./observability/alerts.yml:/etc/prometheus/alerts.yml:ro
+    ports: ["9090:9090"]
+    networks: [backend]
+
+  grafana:
+    <<: *restart
+    image: grafana/grafana:11.3.0
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:?set GRAFANA_PASSWORD}
+      GF_AUTH_ANONYMOUS_ENABLED: "false"
+    volumes:
+      - ./observability/grafana:/etc/grafana/provisioning:ro
+    ports: ["3000:3000"]
+    networks: [backend]
+
+  fieldsim:
+    profiles: [demo]
+    image: python:3.12-slim
+    working_dir: /repo
+    volumes: [..:/repo:ro]
+    command: >
+      sh -c "pip install -q -r tools/fieldsim/requirements.txt &&
+             python tools/fieldsim/fieldsim.py --broker mqtt:1883 --scenario incursion"
+    depends_on: [mqtt, ingest]
+    networks: [field]
+
+secrets:
+  sites.json:
+    file: ./ingest/sites.dev.json
+
+volumes:
+  db-data:
+
+networks:
+  field:     # gateways ↔ broker only
+  backend:   # internal services

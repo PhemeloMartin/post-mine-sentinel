@@ -1,0 +1,42 @@
+{
+  "uid": "sentinel-ops",
+  "title": "Sentinel — SilkNet & fusion operations",
+  "schemaVersion": 39,
+  "time": { "from": "now-6h", "to": "now" },
+  "refresh": "30s",
+  "panels": [
+    {
+      "type": "timeseries", "title": "Uplink frames / s", "gridPos": { "x": 0, "y": 0, "w": 12, "h": 8 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "targets": [
+        { "expr": "rate(silknet_frames_received_total[1m])", "legendFormat": "received" },
+        { "expr": "rate(silknet_frames_duplicate_total[1m])", "legendFormat": "duplicates (2nd anchor)" }
+      ]
+    },
+    {
+      "type": "timeseries", "title": "Security: auth failures & replays", "gridPos": { "x": 12, "y": 0, "w": 12, "h": 8 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "targets": [
+        { "expr": "rate(silknet_frames_auth_failed_total[5m])", "legendFormat": "auth failed" },
+        { "expr": "rate(silknet_frames_replayed_total[5m])", "legendFormat": "replayed" },
+        { "expr": "rate(sentinel_login_failures_total[5m])", "legendFormat": "console login failures" }
+      ]
+    },
+    {
+      "type": "stat", "title": "Alerts raised (24 h)", "gridPos": { "x": 0, "y": 8, "w": 6, "h": 6 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "targets": [{ "expr": "sum(increase(sentinel_alerts_raised_total[24h]))" }]
+    },
+    {
+      "type": "stat", "title": "Dead-lettered batches (24 h)", "gridPos": { "x": 6, "y": 8, "w": 6, "h": 6 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "targets": [{ "expr": "sum(increase(silknet_batches_dead_lettered_total[24h]))" }],
+      "fieldConfig": { "defaults": { "thresholds": { "mode": "absolute", "steps": [{ "color": "green", "value": null }, { "color": "red", "value": 1 }] } } }
+    },
+    {
+      "type": "timeseries", "title": "Fused windows per site", "gridPos": { "x": 12, "y": 8, "w": 12, "h": 6 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "targets": [{ "expr": "sum by (site) (rate(sentinel_windows_ingested_total[5m]))", "legendFormat": "{{site}}" }]
+    }
+  ]
+}

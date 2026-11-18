@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ingest
+  labels: { app: ingest }
+spec:
+  # One active consumer per shared subscription group keeps window aggregation consistent;
+  # a second replica is a hot standby (MQTT persistent session resumes on failover).
+  replicas: 1
+  strategy: { type: Recreate }
+  selector: { matchLabels: { app: ingest } }
+  template:
+    metadata:
+      labels: { app: ingest, azure.workload.identity/use: "true" }
+      annotations: { prometheus.io/scrape: "true", prometheus.io/port: "9102" }
+    spec:
+      serviceAccountName: sentinel-workload
+      automountServiceAccountToken: false
+      terminationGracePeriodSeconds: 20   # time to flush pending windows on SIGTERM
+      securityContext: { runAsNonRoot: true, seccompProfile: { type: RuntimeDefault } }
+      containers:
+        - name: ingest
+          image: sentinel-ingest
+          env:
+            - { name: SENTINEL_INGEST_MQTT_ADDR, value: "mqtt.sentinel.svc:8883" }
+            - { name: SENTINEL_INGEST_API_URL, value: "http://api:8000/api/v1/ingest/windows" }
+            - { name: SENTINEL_INGEST_SITES_FILE, value: /mnt/secrets/silknet-site-keys }
+            - { name: SENTINEL_INGEST_DLQ, value: /dlq/dead-letter.jsonl }
+            - name: SENTINEL_INGEST_TOKEN
+              valueFrom: { secretKeyRef: { name: sentinel-runtime, key: SENTINEL_INGEST_TOKEN } }
+          ports: [{ name: metrics, containerPort: 9102 }]
+          readinessProbe: { httpGet: { path: /readyz, port: metrics }, periodSeconds: 10 }
+          livenessProbe: { httpGet: { path: /healthz, port: metrics }, periodSeconds: 20 }
+          resources:
+            requests: { cpu: 50m, memory: 64Mi }
+            limits: { cpu: 500m, memory: 128Mi }
+          securityContext: { allowPrivilegeEscalation: false, readOnlyRootFilesystem: true, capabilities: { drop: [ALL] } }
+          volumeMounts:
+            - { name: secrets-store, mountPath: /mnt/secrets, readOnly: true }
+            - { name: dlq, mountPath: /dlq }
+      volumes:
+        - name: secrets-store
+          csi: { driver: secrets-store.csi.k8s.io, readOnly: true, volumeAttributes: { secretProviderClass: sentinel-keyvault } }
+        - name: dlq
+          persistentVolumeClaim: { claimName: ingest-dlq }
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata: { name: ingest-dlq }
+spec:
+  accessModes: [ReadWriteOnce]
+  resources: { requests: { storage: 2Gi } }

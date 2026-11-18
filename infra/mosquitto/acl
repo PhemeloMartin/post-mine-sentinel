@@ -1,0 +1,9 @@
+# Least privilege on the message bus.
+# Anonymous (dev only): may publish uplinks and subscribe to them.
+topic readwrite silknet/+/up
+topic read $SYS/#
+
+# Production pattern (certificate CN used as username):
+#   user ingest
+#   topic read silknet/+/up
+#   pattern write silknet/%u/up        # gateway may only publish to its own site topic

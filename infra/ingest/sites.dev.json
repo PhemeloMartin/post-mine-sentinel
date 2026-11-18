@@ -1,0 +1,8 @@
+[
+  {
+    "site_id": 7,
+    "mine_id": "ZA-NW-002",
+    "key_hex": "2b7e151628aed2a6abf7158809cf4f3c",
+    "_comment": "DEVELOPMENT KEY ONLY (the public FIPS-197 example key). Production site keys are generated in the HSM-backed Azure Key Vault and never leave it in plaintext."
+  }
+]

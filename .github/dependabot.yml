@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - { package-ecosystem: npm, directory: /apps/command-center, schedule: { interval: weekly }, open-pull-requests-limit: 5 }
+  - { package-ecosystem: pip, directory: /services/api, schedule: { interval: weekly } }
+  - { package-ecosystem: pip, directory: /ml, schedule: { interval: weekly } }
+  - { package-ecosystem: nuget, directory: /services/case-service, schedule: { interval: weekly } }
+  - { package-ecosystem: gomod, directory: /services/ingest, schedule: { interval: weekly } }
+  - { package-ecosystem: docker, directory: /services/api, schedule: { interval: weekly } }
+  - { package-ecosystem: docker, directory: /services/case-service, schedule: { interval: weekly } }
+  - { package-ecosystem: docker, directory: /services/ingest, schedule: { interval: weekly } }
+  - { package-ecosystem: docker, directory: /apps/command-center, schedule: { interval: weekly } }
+  - { package-ecosystem: terraform, directory: /infra/terraform, schedule: { interval: monthly } }
+  - { package-ecosystem: github-actions, directory: /, schedule: { interval: weekly } }

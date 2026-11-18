@@ -1,0 +1,49 @@
+# Operational alerting (routes to the on-call SRE via Alertmanager → Microsoft Teams / SMS).
+# Runbooks: docs/14-devops-and-operations.md
+groups:
+  - name: sentinel-security
+    rules:
+      - alert: SilkNetAuthFailuresSpike
+        expr: rate(silknet_frames_auth_failed_total[5m]) > 0.05
+        for: 5m
+        labels: { severity: critical, team: security }
+        annotations:
+          summary: "Frames failing AES-CCM authentication: possible spoofing or a cloned node"
+          runbook: "docs/14-devops-and-operations.md#rb-auth-failures"
+      - alert: SilkNetReplayAttempts
+        expr: increase(silknet_frames_replayed_total[15m]) > 10
+        labels: { severity: warning, team: security }
+        annotations:
+          summary: "Replayed or stale frame counters detected"
+      - alert: LoginFailureBurst
+        expr: rate(sentinel_login_failures_total[5m]) > 0.5
+        for: 2m
+        labels: { severity: warning, team: security }
+        annotations:
+          summary: "Credential-stuffing pattern against the console"
+
+  - name: sentinel-reliability
+    rules:
+      - alert: IngestDeadLetters
+        expr: increase(silknet_batches_dead_lettered_total[10m]) > 0
+        labels: { severity: critical, team: platform }
+        annotations:
+          summary: "Window batches could not be delivered to the fusion API (evidence at risk)"
+          runbook: "docs/14-devops-and-operations.md#rb-dead-letters"
+      - alert: IngestCircuitOpen
+        expr: increase(silknet_circuit_open_total[5m]) > 0
+        labels: { severity: warning, team: platform }
+        annotations:
+          summary: "Ingest → API circuit breaker opened"
+      - alert: SiteSilent
+        expr: sum(rate(silknet_frames_received_total[30m])) == 0
+        for: 30m
+        labels: { severity: critical, team: noc }
+        annotations:
+          summary: "No uplinks for 30 minutes: backhaul down, broker down, or a jammed site"
+      - alert: TargetDown
+        expr: up == 0
+        for: 2m
+        labels: { severity: critical, team: platform }
+        annotations:
+          summary: "{{ $labels.job }} is not being scraped"
