@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentinel-ml"
+version = "0.1.0"
+description = "Post-Mine Sentinel: signal processing, edge ML, sensor fusion, risk and planning models"
+requires-python = ">=3.11"
+license = { text = "Proprietary - see repository root" }
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "scikit-learn>=1.4",
+    "joblib>=1.3",
+]
+
+[project.optional-dependencies]
+plots = ["matplotlib>=3.8"]
+satellite = ["earthengine-api>=0.1.390"]
+quantum = ["qiskit>=1.0", "qiskit-algorithms>=0.3"]
+dev = ["pytest>=8", "ruff>=0.5", "matplotlib>=3.8"]
+
+[tool.setuptools.packages.find]
+include = ["sentinel_ml*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 130
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "N", "S", "NPY"]
+ignore = ["S101", "S311", "N806"]  # test asserts; simulation RNG; maths notation (Q, X) for matrices

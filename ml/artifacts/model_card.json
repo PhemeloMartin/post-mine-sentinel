@@ -1,0 +1,744 @@
+{
+  "model": "spider-edge-mlp",
+  "version": "0.1.0",
+  "task": "4-second geophone window classification for intrusion detection at derelict mine shafts",
+  "classes": [
+    "background",
+    "footsteps",
+    "digging",
+    "machinery",
+    "vehicle",
+    "animal",
+    "blast"
+  ],
+  "threat_classes": [
+    "footsteps",
+    "digging",
+    "machinery",
+    "blast"
+  ],
+  "features": [
+    "log_rms",
+    "log_peak",
+    "crest_log",
+    "kurt_log",
+    "zcr",
+    "centroid",
+    "bandwidth",
+    "rolloff85",
+    "flatness",
+    "band_1_8",
+    "band_8_16",
+    "band_16_32",
+    "band_32_64",
+    "band_64_128",
+    "band_128_250",
+    "cadence_hz",
+    "cadence_strength",
+    "sta_lta_log",
+    "impulse_rate",
+    "impulse_cv",
+    "active_fraction"
+  ],
+  "architecture": "StandardScaler \u2192 Dense(32, ReLU) \u2192 Dense(16, ReLU) \u2192 Dense(7, softmax)",
+  "footprint": {
+    "parameters": 1393,
+    "flash_bytes_fp32": 5572,
+    "macs_per_inference": 1296
+  },
+  "alarm_threshold": 0.386889,
+  "operating_point": "P(threat) threshold chosen on validation for false-alarm rate \u2264 2%",
+  "training_data": {
+    "source": "Physics-informed synthetic geophone signals (sentinel_ml.signals.synth)",
+    "windows": {
+      "train": 8400,
+      "val": 2100,
+      "test": 2800,
+      "test_shift": 2800
+    },
+    "sample_rate_hz": 500,
+    "window_seconds": 4,
+    "generation_seconds": 32.8
+  },
+  "evaluation": {
+    "logistic_regression": {
+      "threshold": 0.613662,
+      "fit_seconds": 2.01,
+      "test": {
+        "accuracy": 0.9125,
+        "macro_f1": 0.9125,
+        "threat_auc": 0.9878,
+        "detection_rate": 0.9306,
+        "false_alarm_rate": 0.0233,
+        "ece": 0.0164,
+        "confusion_matrix": [
+          [
+            370,
+            1,
+            4,
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            7,
+            357,
+            4,
+            0,
+            0,
+            32,
+            0
+          ],
+          [
+            42,
+            0,
+            351,
+            0,
+            0,
+            7,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            398,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            400,
+            0,
+            0
+          ],
+          [
+            80,
+            33,
+            8,
+            0,
+            0,
+            279,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            400
+          ]
+        ],
+        "per_class_recall": {
+          "background": 0.925,
+          "footsteps": 0.8925,
+          "digging": 0.8775,
+          "machinery": 0.995,
+          "vehicle": 1.0,
+          "animal": 0.6975,
+          "blast": 1.0
+        }
+      },
+      "test_shift": {
+        "accuracy": 0.7261,
+        "macro_f1": 0.7286,
+        "threat_auc": 0.9213,
+        "detection_rate": 0.7581,
+        "false_alarm_rate": 0.08,
+        "ece": 0.0687,
+        "confusion_matrix": [
+          [
+            252,
+            13,
+            28,
+            2,
+            0,
+            105,
+            0
+          ],
+          [
+            23,
+            199,
+            55,
+            3,
+            0,
+            120,
+            0
+          ],
+          [
+            118,
+            11,
+            201,
+            2,
+            0,
+            68,
+            0
+          ],
+          [
+            0,
+            2,
+            5,
+            385,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            400,
+            0,
+            0
+          ],
+          [
+            87,
+            72,
+            30,
+            2,
+            0,
+            209,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            12,
+            0,
+            0,
+            387
+          ]
+        ],
+        "per_class_recall": {
+          "background": 0.63,
+          "footsteps": 0.4975,
+          "digging": 0.5025,
+          "machinery": 0.9625,
+          "vehicle": 1.0,
+          "animal": 0.5225,
+          "blast": 0.9675
+        }
+      }
+    },
+    "random_forest": {
+      "threshold": 0.443537,
+      "fit_seconds": 1.33,
+      "test": {
+        "accuracy": 0.935,
+        "macro_f1": 0.9357,
+        "threat_auc": 0.9908,
+        "detection_rate": 0.96,
+        "false_alarm_rate": 0.0217,
+        "ece": 0.0402,
+        "confusion_matrix": [
+          [
+            391,
+            0,
+            2,
+            0,
+            0,
+            7,
+            0
+          ],
+          [
+            6,
+            382,
+            2,
+            0,
+            0,
+            10,
+            0
+          ],
+          [
+            50,
+            0,
+            349,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            398,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            400,
+            0,
+            0
+          ],
+          [
+            86,
+            10,
+            6,
+            0,
+            0,
+            298,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            400
+          ]
+        ],
+        "per_class_recall": {
+          "background": 0.9775,
+          "footsteps": 0.955,
+          "digging": 0.8725,
+          "machinery": 0.995,
+          "vehicle": 1.0,
+          "animal": 0.745,
+          "blast": 1.0
+        }
+      },
+      "test_shift": {
+        "accuracy": 0.7582,
+        "macro_f1": 0.7544,
+        "threat_auc": 0.9279,
+        "detection_rate": 0.8569,
+        "false_alarm_rate": 0.2083,
+        "ece": 0.0422,
+        "confusion_matrix": [
+          [
+            341,
+            14,
+            22,
+            0,
+            0,
+            23,
+            0
+          ],
+          [
+            48,
+            237,
+            57,
+            0,
+            0,
+            58,
+            0
+          ],
+          [
+            165,
+            6,
+            199,
+            0,
+            0,
+            30,
+            0
+          ],
+          [
+            1,
+            1,
+            3,
+            388,
+            0,
+            7,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            400,
+            0,
+            0
+          ],
+          [
+            131,
+            94,
+            17,
+            0,
+            0,
+            158,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            400
+          ]
+        ],
+        "per_class_recall": {
+          "background": 0.8525,
+          "footsteps": 0.5925,
+          "digging": 0.4975,
+          "machinery": 0.97,
+          "vehicle": 1.0,
+          "animal": 0.395,
+          "blast": 1.0
+        }
+      }
+    },
+    "hist_gradient_boosting": {
+      "threshold": 0.383855,
+      "fit_seconds": 25.89,
+      "test": {
+        "accuracy": 0.9332,
+        "macro_f1": 0.9341,
+        "threat_auc": 0.992,
+        "detection_rate": 0.9581,
+        "false_alarm_rate": 0.0208,
+        "ece": 0.0504,
+        "confusion_matrix": [
+          [
+            372,
+            0,
+            5,
+            0,
+            0,
+            23,
+            0
+          ],
+          [
+            5,
+            380,
+            1,
+            0,
+            0,
+            14,
+            0
+          ],
+          [
+            47,
+            0,
+            350,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            398,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            400,
+            0,
+            0
+          ],
+          [
+            71,
+            10,
+            6,
+            0,
+            0,
+            313,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            400
+          ]
+        ],
+        "per_class_recall": {
+          "background": 0.93,
+          "footsteps": 0.95,
+          "digging": 0.875,
+          "machinery": 0.995,
+          "vehicle": 1.0,
+          "animal": 0.7825,
+          "blast": 1.0
+        }
+      },
+      "test_shift": {
+        "accuracy": 0.7518,
+        "macro_f1": 0.7543,
+        "threat_auc": 0.9321,
+        "detection_rate": 0.8281,
+        "false_alarm_rate": 0.1242,
+        "ece": 0.1653,
+        "confusion_matrix": [
+          [
+            239,
+            14,
+            27,
+            3,
+            0,
+            117,
+            0
+          ],
+          [
+            25,
+            258,
+            36,
+            5,
+            0,
+            76,
+            0
+          ],
+          [
+            118,
+            13,
+            200,
+            4,
+            0,
+            65,
+            0
+          ],
+          [
+            0,
+            3,
+            1,
+            387,
+            0,
+            9,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            399,
+            0,
+            0
+          ],
+          [
+            88,
+            72,
+            15,
+            3,
+            0,
+            222,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            400
+          ]
+        ],
+        "per_class_recall": {
+          "background": 0.5975,
+          "footsteps": 0.645,
+          "digging": 0.5,
+          "machinery": 0.9675,
+          "vehicle": 0.9975,
+          "animal": 0.555,
+          "blast": 1.0
+        }
+      }
+    },
+    "mlp_edge": {
+      "threshold": 0.386889,
+      "fit_seconds": 2.62,
+      "test": {
+        "accuracy": 0.9282,
+        "macro_f1": 0.9294,
+        "threat_auc": 0.9923,
+        "detection_rate": 0.9537,
+        "false_alarm_rate": 0.0217,
+        "ece": 0.0162,
+        "confusion_matrix": [
+          [
+            373,
+            0,
+            5,
+            0,
+            0,
+            22,
+            0
+          ],
+          [
+            9,
+            369,
+            2,
+            1,
+            0,
+            19,
+            0
+          ],
+          [
+            48,
+            0,
+            350,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            399,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            399,
+            0,
+            0
+          ],
+          [
+            77,
+            11,
+            3,
+            0,
+            0,
+            309,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            400
+          ]
+        ],
+        "per_class_recall": {
+          "background": 0.9325,
+          "footsteps": 0.9225,
+          "digging": 0.875,
+          "machinery": 0.9975,
+          "vehicle": 0.9975,
+          "animal": 0.7725,
+          "blast": 1.0
+        }
+      },
+      "test_shift": {
+        "accuracy": 0.7429,
+        "macro_f1": 0.7454,
+        "threat_auc": 0.9291,
+        "detection_rate": 0.8119,
+        "false_alarm_rate": 0.1175,
+        "ece": 0.094,
+        "confusion_matrix": [
+          [
+            283,
+            8,
+            21,
+            0,
+            0,
+            88,
+            0
+          ],
+          [
+            44,
+            211,
+            43,
+            10,
+            1,
+            91,
+            0
+          ],
+          [
+            130,
+            7,
+            199,
+            0,
+            0,
+            64,
+            0
+          ],
+          [
+            1,
+            1,
+            5,
+            383,
+            0,
+            10,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            400,
+            0,
+            0
+          ],
+          [
+            102,
+            59,
+            21,
+            0,
+            0,
+            218,
+            0
+          ],
+          [
+            0,
+            14,
+            0,
+            0,
+            0,
+            0,
+            386
+          ]
+        ],
+        "per_class_recall": {
+          "background": 0.7075,
+          "footsteps": 0.5275,
+          "digging": 0.4975,
+          "machinery": 0.9575,
+          "vehicle": 1.0,
+          "animal": 0.545,
+          "blast": 0.965
+        }
+      }
+    }
+  },
+  "intended_use": "Edge pre-filter that decides whether a vibration window is worth reporting over the mesh. Alerts are always fused with other evidence and reviewed by a human operator.",
+  "limitations": [
+    "Trained only on synthetic data; field recordings from a Phase-1 pilot are required before operational reliance.",
+    "Underground activity is only observable when surface coupling is sufficient; deep workings may be invisible to surface geophones.",
+    "Animal and vehicle classes are the main false-alarm sources; fusion with PIR and acoustic channels reduces but does not eliminate them."
+  ],
+  "ethical_considerations": "The model classifies ground vibration, not people. It processes no audio content, images or personal identifiers (POPIA s19 data minimisation)."
+}

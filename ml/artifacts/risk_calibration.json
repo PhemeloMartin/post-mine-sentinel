@@ -1,0 +1,22 @@
+{
+  "n_sites": 119,
+  "n_positive": 34,
+  "learned_weights": {
+    "bias": -3.657,
+    "commodity": 1.582,
+    "residual": 1.543,
+    "access": 1.246,
+    "pressure": 0.094
+  },
+  "expert_weights": {
+    "bias": -6.0,
+    "commodity": 2.0,
+    "residual": 2.0,
+    "access": 3.0,
+    "pressure": 1.5
+  },
+  "loo_auc_learned": 0.7557,
+  "auc_expert_static": 0.799,
+  "brier_learned_loo": 0.1726,
+  "note": "Weak positive-unlabelled labels from public reporting; expert weights remain the operational prior. Re-run when inspection outcomes (true negatives) are available."
+}
