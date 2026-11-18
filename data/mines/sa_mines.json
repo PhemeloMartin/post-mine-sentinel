@@ -1,0 +1,6821 @@
+{
+ "schemaVersion": 1,
+ "generatedFor": 2026,
+ "disclaimer": "Prototype register of notable South African mines compiled from public sources. Coordinates are approximate (see precisionM). Production ranges marked 'low' confidence and all residual figures are modelled estimates that must be replaced with SAMINDABA / DMPR records before operational use.",
+ "count": 119,
+ "mines": [
+  {
+   "id": "ZA-GP-007",
+   "name": "CRD Mine (disused)",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Florida (Roodepoort)",
+   "lat": -26.176,
+   "lon": 27.91,
+   "precisionM": 2500,
+   "field": "Central Rand",
+   "method": "underground",
+   "opened": null,
+   "closed": null,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": null,
+   "production": null,
+   "residual": null,
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2026
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "17 Jul 2026: two SANDF members (1 Parachute Battalion) died after falling into an open vertical shaft while pursuing suspected illegal miners during Operation Prosper",
+   "risk": {
+    "rai": 92.92,
+    "band": "critical",
+    "logit": 2.5751,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6961,
+     "access": 0.6426,
+     "pressure": 0.9701,
+     "history": 1.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.3923,
+     "access": 1.9277,
+     "pressure": 1.4552,
+     "history": 1.8
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-001",
+   "name": "Crown Mines",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Johannesburg (Crown / Riverlea)",
+   "lat": -26.223,
+   "lon": 27.985,
+   "precisionM": 1500,
+   "field": "Central Rand",
+   "method": "underground",
+   "opened": 1909,
+   "closed": 1977,
+   "status": "derelict",
+   "datesConfidence": "medium",
+   "maxDepthM": 2800.0,
+   "production": {
+    "low": 1000.0,
+    "high": 1500.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 80.0,
+    "high": 225.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2023
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "Once among the richest gold mines in the world; Riverlea / Zamimpilo illegal-mining raids (2023) on adjacent ground",
+   "risk": {
+    "rai": 85.31,
+    "band": "critical",
+    "logit": 1.7594,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.9127,
+     "access": 0.4568,
+     "pressure": 0.9812,
+     "history": 0.6065
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.8253,
+     "access": 1.3705,
+     "pressure": 1.4719,
+     "history": 1.0918
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-012",
+   "name": "Consolidated Main Reef",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Johannesburg (Main Reef Road)",
+   "lat": -26.196,
+   "lon": 27.96,
+   "precisionM": 1500,
+   "field": "Central Rand",
+   "method": "underground",
+   "opened": 1888,
+   "closed": 1980,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 2000.0,
+   "production": {
+    "low": 200.0,
+    "high": 600.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 16.0,
+    "high": 90.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2023
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "Adjacent to Riverlea ground cleared during 2023 operations",
+   "risk": {
+    "rai": 84.49,
+    "band": "critical",
+    "logit": 1.6951,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.7232,
+     "access": 0.5645,
+     "pressure": 0.9756,
+     "history": 0.6065
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.4465,
+     "access": 1.6935,
+     "pressure": 1.4634,
+     "history": 1.0918
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-005",
+   "name": "Langlaagte Estate",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Johannesburg (Langlaagte)",
+   "lat": -26.201,
+   "lon": 27.997,
+   "precisionM": 1500,
+   "field": "Central Rand",
+   "method": "underground",
+   "opened": 1886,
+   "closed": 1949,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 1200.0,
+   "production": {
+    "low": 50.0,
+    "high": 200.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 4.0,
+    "high": 30.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2023
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "Near George Harrison Park, site of the 1886 Main Reef discovery",
+   "risk": {
+    "rai": 83.69,
+    "band": "critical",
+    "logit": 1.6354,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.5241,
+     "access": 0.6711,
+     "pressure": 0.9882,
+     "history": 0.6065
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.0481,
+     "access": 2.0133,
+     "pressure": 1.4822,
+     "history": 1.0918
+    }
+   }
+  },
+  {
+   "id": "ZA-NW-002",
+   "name": "Buffelsfontein Shaft 11",
+   "commodity": "gold",
+   "secondary": [
+    "uranium"
+   ],
+   "province": "NW",
+   "provinceName": "North West",
+   "locality": "Stilfontein",
+   "lat": -26.89,
+   "lon": 26.805,
+   "precisionM": 1500,
+   "field": "Klerksdorp (KOSH)",
+   "method": "underground",
+   "opened": 1957,
+   "closed": 2013,
+   "status": "derelict",
+   "datesConfidence": "medium",
+   "maxDepthM": 2500.0,
+   "production": {
+    "low": 600.0,
+    "high": 1200.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 48.0,
+    "high": 180.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2025
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "Aug 2024 to Jan 2025 standoff; 78 bodies and 246 survivors recovered in Jan 2025 (87 deaths in total)",
+   "risk": {
+    "rai": 83.5,
+    "band": "critical",
+    "logit": 1.6214,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.8603,
+     "access": 0.4477,
+     "pressure": 0.6893,
+     "history": 0.8465
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.7206,
+     "access": 1.3432,
+     "pressure": 1.034,
+     "history": 1.5237
+    }
+   }
+  },
+  {
+   "id": "ZA-MP-005",
+   "name": "TGME Pilgrim's Rest",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "MP",
+   "provinceName": "Mpumalanga",
+   "locality": "Pilgrim's Rest",
+   "lat": -24.91,
+   "lon": 30.76,
+   "precisionM": 3000,
+   "field": "Sabie–Pilgrim's Rest",
+   "method": "underground",
+   "opened": 1873,
+   "closed": 2015,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 600.0,
+   "production": {
+    "low": 100.0,
+    "high": 250.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 8.0,
+    "high": 37.5,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2023
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Heritage gold-rush town; illegal mining reported in surrounding adits",
+   "risk": {
+    "rai": 82.95,
+    "band": "critical",
+    "logit": 1.5821,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.5743,
+     "access": 0.8486,
+     "pressure": 0.5305,
+     "history": 0.6065
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.1486,
+     "access": 2.5459,
+     "pressure": 0.7958,
+     "history": 1.0918
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-006",
+   "name": "Durban Roodepoort Deep",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Roodepoort (Durban Deep)",
+   "lat": -26.17,
+   "lon": 27.865,
+   "precisionM": 2000,
+   "field": "West Rand",
+   "method": "underground",
+   "opened": 1898,
+   "closed": 2001,
+   "status": "derelict",
+   "datesConfidence": "medium",
+   "maxDepthM": 3000.0,
+   "production": {
+    "low": 300.0,
+    "high": 800.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 24.0,
+    "high": 120.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2024
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "Informal settlements on old mine land; surface tailings retreated by DRDGOLD",
+   "risk": {
+    "rai": 82.74,
+    "band": "critical",
+    "logit": 1.5676,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.7779,
+     "access": 0.4229,
+     "pressure": 0.969,
+     "history": 0.7165
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.5558,
+     "access": 1.2686,
+     "pressure": 1.4535,
+     "history": 1.2898
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-009",
+   "name": "East Rand Proprietary Mines (ERPM)",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Boksburg",
+   "lat": -26.215,
+   "lon": 28.255,
+   "precisionM": 1500,
+   "field": "East Rand",
+   "method": "underground",
+   "opened": 1893,
+   "closed": 2008,
+   "status": "closed",
+   "datesConfidence": "medium",
+   "maxDepthM": 3500.0,
+   "production": {
+    "low": 600.0,
+    "high": 1600.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 48.0,
+    "high": 240.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2024
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "Angelo informal settlement gas-leak deaths (Jul 2023) linked to illegal gold processing; Central Basin AMD pumping station nearby",
+   "risk": {
+    "rai": 81.29,
+    "band": "critical",
+    "logit": 1.4689,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.9023,
+     "access": 0.3197,
+     "pressure": 0.9436,
+     "history": 0.7165
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.8047,
+     "access": 0.9591,
+     "pressure": 1.4154,
+     "history": 1.2898
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-002",
+   "name": "President Steyn",
+   "commodity": "gold",
+   "secondary": [
+    "uranium"
+   ],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Welkom",
+   "lat": -27.985,
+   "lon": 26.75,
+   "precisionM": 2000,
+   "field": "Free State (Welkom)",
+   "method": "underground",
+   "opened": 1954,
+   "closed": 2005,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 2500.0,
+   "production": {
+    "low": 600.0,
+    "high": 1200.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 48.0,
+    "high": 180.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2024
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 80.95,
+    "band": "critical",
+    "logit": 1.4466,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.8603,
+     "access": 0.4308,
+     "pressure": 0.7626,
+     "history": 0.7165
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.7206,
+     "access": 1.2923,
+     "pressure": 1.1439,
+     "history": 1.2898
+    }
+   }
+  },
+  {
+   "id": "ZA-NW-004",
+   "name": "Hartebeestfontein",
+   "commodity": "gold",
+   "secondary": [
+    "uranium"
+   ],
+   "province": "NW",
+   "provinceName": "North West",
+   "locality": "Klerksdorp",
+   "lat": -26.815,
+   "lon": 26.72,
+   "precisionM": 2000,
+   "field": "Klerksdorp (KOSH)",
+   "method": "underground",
+   "opened": 1955,
+   "closed": 2013,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 2600.0,
+   "production": {
+    "low": 600.0,
+    "high": 1200.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 48.0,
+    "high": 180.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2024
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 80.89,
+    "band": "critical",
+    "logit": 1.4432,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.8603,
+     "access": 0.4357,
+     "pressure": 0.7504,
+     "history": 0.7165
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.7206,
+     "access": 1.3071,
+     "pressure": 1.1257,
+     "history": 1.2898
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-001",
+   "name": "President Brand",
+   "commodity": "gold",
+   "secondary": [
+    "uranium"
+   ],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Welkom",
+   "lat": -27.97,
+   "lon": 26.7,
+   "precisionM": 2000,
+   "field": "Free State (Welkom)",
+   "method": "underground",
+   "opened": 1954,
+   "closed": 2012,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 2400.0,
+   "production": {
+    "low": 600.0,
+    "high": 1200.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 48.0,
+    "high": 180.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2024
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 80.15,
+    "band": "critical",
+    "logit": 1.3958,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.8603,
+     "access": 0.4192,
+     "pressure": 0.7518,
+     "history": 0.7165
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.7206,
+     "access": 1.2577,
+     "pressure": 1.1277,
+     "history": 1.2898
+    }
+   }
+  },
+  {
+   "id": "ZA-NW-003",
+   "name": "Buffelsfontein Shaft 10",
+   "commodity": "gold",
+   "secondary": [
+    "uranium"
+   ],
+   "province": "NW",
+   "provinceName": "North West",
+   "locality": "Stilfontein",
+   "lat": -26.875,
+   "lon": 26.815,
+   "precisionM": 1500,
+   "field": "Klerksdorp (KOSH)",
+   "method": "underground",
+   "opened": 1957,
+   "closed": 2013,
+   "status": "derelict",
+   "datesConfidence": "medium",
+   "maxDepthM": 2500.0,
+   "production": null,
+   "residual": null,
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2025
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "Linked workings; reports allege bodies remain underground after the 2025 sweep",
+   "risk": {
+    "rai": 78.42,
+    "band": "critical",
+    "logit": 1.2903,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6961,
+     "access": 0.4477,
+     "pressure": 0.6875,
+     "history": 0.8465
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.3923,
+     "access": 1.3432,
+     "pressure": 1.0312,
+     "history": 1.5237
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-006",
+   "name": "Harmony (Virginia)",
+   "commodity": "gold",
+   "secondary": [
+    "uranium"
+   ],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Virginia",
+   "lat": -28.1,
+   "lon": 26.87,
+   "precisionM": 2000,
+   "field": "Free State (Welkom)",
+   "method": "underground",
+   "opened": 1954,
+   "closed": 2010,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 2200.0,
+   "production": {
+    "low": 500.0,
+    "high": 1000.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 40.0,
+    "high": 150.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2024
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 77.62,
+    "band": "critical",
+    "logit": 1.2434,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.8276,
+     "access": 0.4511,
+     "pressure": 0.6302,
+     "history": 0.7165
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.6551,
+     "access": 1.3533,
+     "pressure": 0.9452,
+     "history": 1.2898
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-005",
+   "name": "St Helena",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Welkom",
+   "lat": -28.005,
+   "lon": 26.68,
+   "precisionM": 2000,
+   "field": "Free State (Welkom)",
+   "method": "underground",
+   "opened": 1951,
+   "closed": 2015,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 2300.0,
+   "production": {
+    "low": 300.0,
+    "high": 600.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 24.0,
+    "high": 90.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2024
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 77.18,
+    "band": "critical",
+    "logit": 1.2184,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.7362,
+     "access": 0.4576,
+     "pressure": 0.7223,
+     "history": 0.7165
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.4724,
+     "access": 1.3728,
+     "pressure": 1.0835,
+     "history": 1.2898
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-003",
+   "name": "Free State Geduld",
+   "commodity": "gold",
+   "secondary": [
+    "uranium"
+   ],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Odendaalsrus",
+   "lat": -27.89,
+   "lon": 26.725,
+   "precisionM": 2000,
+   "field": "Free State (Welkom)",
+   "method": "underground",
+   "opened": 1956,
+   "closed": 2003,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 2400.0,
+   "production": {
+    "low": 600.0,
+    "high": 1200.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 48.0,
+    "high": 180.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2023
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 76.88,
+    "band": "critical",
+    "logit": 1.2015,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.8603,
+     "access": 0.4462,
+     "pressure": 0.7004,
+     "history": 0.6065
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.7206,
+     "access": 1.3385,
+     "pressure": 1.0507,
+     "history": 1.0918
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-013",
+   "name": "Randfontein Estates",
+   "commodity": "gold",
+   "secondary": [
+    "uranium"
+   ],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Randfontein",
+   "lat": -26.18,
+   "lon": 27.705,
+   "precisionM": 2000,
+   "field": "West Rand",
+   "method": "underground",
+   "opened": 1889,
+   "closed": 2008,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 2500.0,
+   "production": {
+    "low": 800.0,
+    "high": 1500.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 64.0,
+    "high": 225.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2024
+   },
+   "flooded": "yes",
+   "sealed": false,
+   "notes": "West Rand Basin acid mine drainage decant began 2002",
+   "risk": {
+    "rai": 76.57,
+    "band": "critical",
+    "logit": 1.1841,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.903,
+     "access": 0.254,
+     "pressure": 0.8842,
+     "history": 0.7165
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.8059,
+     "access": 0.7621,
+     "pressure": 1.3263,
+     "history": 1.2898
+    }
+   }
+  },
+  {
+   "id": "ZA-NW-009",
+   "name": "Orkney (Pamodzi)",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "NW",
+   "provinceName": "North West",
+   "locality": "Orkney (Kanana)",
+   "lat": -26.97,
+   "lon": 26.665,
+   "precisionM": 2000,
+   "field": "Klerksdorp (KOSH)",
+   "method": "underground",
+   "opened": 1940,
+   "closed": 2009,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 2000.0,
+   "production": {
+    "low": 200.0,
+    "high": 500.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 16.0,
+    "high": 75.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2023
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "Operator liquidated in 2009; persistent illegal mining in surrounding settlements",
+   "risk": {
+    "rai": 75.3,
+    "band": "critical",
+    "logit": 1.1149,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6961,
+     "access": 0.5316,
+     "pressure": 0.6907,
+     "history": 0.6065
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.3923,
+     "access": 1.5949,
+     "pressure": 1.036,
+     "history": 1.0918
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-017",
+   "name": "Cooke Operations",
+   "commodity": "gold",
+   "secondary": [
+    "uranium"
+   ],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Randfontein (Cooke)",
+   "lat": -26.34,
+   "lon": 27.73,
+   "precisionM": 2500,
+   "field": "West Rand",
+   "method": "underground",
+   "opened": 1977,
+   "closed": 2020,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 2200.0,
+   "production": {
+    "low": 300.0,
+    "high": 800.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 24.0,
+    "high": 120.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2023
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "Operator has publicly reported extensive illegal-mining infiltration of Cooke shafts",
+   "risk": {
+    "rai": 73.72,
+    "band": "high",
+    "logit": 1.0314,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.7779,
+     "access": 0.3696,
+     "pressure": 0.8501,
+     "history": 0.6065
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.5558,
+     "access": 1.1087,
+     "pressure": 1.2751,
+     "history": 1.0918
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-031",
+   "name": "Grootvlei",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Springs",
+   "lat": -26.255,
+   "lon": 28.485,
+   "precisionM": 2000,
+   "field": "Far East Rand",
+   "method": "underground",
+   "opened": 1938,
+   "closed": 2011,
+   "status": "derelict",
+   "datesConfidence": "medium",
+   "maxDepthM": 2000.0,
+   "production": {
+    "low": 300.0,
+    "high": 700.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 24.0,
+    "high": 105.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2024
+   },
+   "flooded": "yes",
+   "sealed": false,
+   "notes": "Collapsed under Aurora Empowerment Systems (2009–2011); infrastructure stripped",
+   "risk": {
+    "rai": 73.14,
+    "band": "high",
+    "logit": 1.0016,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.7582,
+     "access": 0.3132,
+     "pressure": 0.8372,
+     "history": 0.7165
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.5165,
+     "access": 0.9397,
+     "pressure": 1.2557,
+     "history": 1.2898
+    }
+   }
+  },
+  {
+   "id": "ZA-NW-001",
+   "name": "Stilfontein Gold Mine",
+   "commodity": "gold",
+   "secondary": [
+    "uranium"
+   ],
+   "province": "NW",
+   "provinceName": "North West",
+   "locality": "Stilfontein",
+   "lat": -26.835,
+   "lon": 26.79,
+   "precisionM": 2000,
+   "field": "Klerksdorp (KOSH)",
+   "method": "underground",
+   "opened": 1952,
+   "closed": 2005,
+   "status": "derelict",
+   "datesConfidence": "medium",
+   "maxDepthM": 2500.0,
+   "production": {
+    "low": 300.0,
+    "high": 700.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 24.0,
+    "high": 105.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2025
+   },
+   "flooded": "yes",
+   "sealed": false,
+   "notes": "Operator collapse in 2005 (Margaret Shaft); long-running illegal mining hotspot",
+   "risk": {
+    "rai": 72.48,
+    "band": "high",
+    "logit": 0.9685,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.7582,
+     "access": 0.2872,
+     "pressure": 0.7112,
+     "history": 0.8465
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.5165,
+     "access": 0.8615,
+     "pressure": 1.0668,
+     "history": 1.5237
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-036",
+   "name": "Springs Mines",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Springs",
+   "lat": -26.26,
+   "lon": 28.43,
+   "precisionM": 2000,
+   "field": "Far East Rand",
+   "method": "underground",
+   "opened": 1909,
+   "closed": 1963,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 1800.0,
+   "production": {
+    "low": 100.0,
+    "high": 400.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 8.0,
+    "high": 60.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2023
+   },
+   "flooded": "yes",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 68.16,
+    "band": "high",
+    "logit": 0.7613,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6446,
+     "access": 0.3558,
+     "pressure": 0.8753,
+     "history": 0.6065
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.2892,
+     "access": 1.0674,
+     "pressure": 1.3129,
+     "history": 1.0918
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-007",
+   "name": "Kleinzee",
+   "commodity": "diamonds",
+   "secondary": [],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Kleinzee",
+   "lat": -29.68,
+   "lon": 17.07,
+   "precisionM": 3000,
+   "field": "Namaqualand coastal placers",
+   "method": "alluvial",
+   "opened": 1927,
+   "closed": 2011,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 30.0,
+   "production": {
+    "low": 15.0,
+    "high": 40.0,
+    "unit": "Mct",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.75,
+    "high": 4.8,
+    "unit": "Mct",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2024
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Namaqualand coastal diamond fields: illegal diggers widely reported",
+   "risk": {
+    "rai": 67.51,
+    "band": "high",
+    "logit": 0.7314,
+    "factors": {
+     "commodity": 0.85,
+     "residual": 0.5803,
+     "access": 0.831,
+     "pressure": 0.0588,
+     "history": 0.7165
+    },
+    "contributions": {
+     "commodity": 1.7,
+     "residual": 1.1605,
+     "access": 2.493,
+     "pressure": 0.0882,
+     "history": 1.2898
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-002",
+   "name": "De Beers Mine",
+   "commodity": "diamonds",
+   "secondary": [],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Kimberley",
+   "lat": -28.724,
+   "lon": 24.782,
+   "precisionM": 1000,
+   "field": "Kimberley kimberlite cluster",
+   "method": "both",
+   "opened": 1871,
+   "closed": 2005,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 800.0,
+   "production": {
+    "low": 20.0,
+    "high": 60.0,
+    "unit": "Mct",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.4,
+    "high": 3.0,
+    "unit": "Mct",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2024
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "Illegal diggers reported on Kimberley tailings and old workings",
+   "risk": {
+    "rai": 67.04,
+    "band": "high",
+    "logit": 0.7102,
+    "factors": {
+     "commodity": 0.85,
+     "residual": 0.4339,
+     "access": 0.6183,
+     "pressure": 0.6653,
+     "history": 0.7165
+    },
+    "contributions": {
+     "commodity": 1.7,
+     "residual": 0.8677,
+     "access": 1.8548,
+     "pressure": 0.9979,
+     "history": 1.2898
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-014",
+   "name": "West Rand Consolidated",
+   "commodity": "gold",
+   "secondary": [
+    "uranium"
+   ],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Krugersdorp (West Village)",
+   "lat": -26.125,
+   "lon": 27.76,
+   "precisionM": 2000,
+   "field": "West Rand",
+   "method": "underground",
+   "opened": 1888,
+   "closed": 1998,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 2000.0,
+   "production": {
+    "low": 200.0,
+    "high": 500.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 16.0,
+    "high": 75.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2022
+   },
+   "flooded": "yes",
+   "sealed": false,
+   "notes": "West Village (Krugersdorp) attack at abandoned mine dump, Jul 2022, linked to illegal miners",
+   "risk": {
+    "rai": 66.55,
+    "band": "high",
+    "logit": 0.6881,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6961,
+     "access": 0.3341,
+     "pressure": 0.9129,
+     "history": 0.5134
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.3923,
+     "access": 1.0023,
+     "pressure": 1.3693,
+     "history": 0.9242
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-008",
+   "name": "Rand Leases",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Roodepoort",
+   "lat": -26.195,
+   "lon": 27.885,
+   "precisionM": 2000,
+   "field": "West Rand",
+   "method": "underground",
+   "opened": 1896,
+   "closed": 1965,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 1500.0,
+   "production": {
+    "low": 100.0,
+    "high": 400.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 8.0,
+    "high": 60.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 65.93,
+    "band": "high",
+    "logit": 0.6603,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6446,
+     "access": 0.6335,
+     "pressure": 0.9804,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.2892,
+     "access": 1.9004,
+     "pressure": 1.4706,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-004",
+   "name": "Village Main Reef",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Johannesburg (Village Main)",
+   "lat": -26.214,
+   "lon": 28.042,
+   "precisionM": 1500,
+   "field": "Central Rand",
+   "method": "underground",
+   "opened": 1888,
+   "closed": 1964,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 1500.0,
+   "production": {
+    "low": 100.0,
+    "high": 300.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 8.0,
+    "high": 45.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "Early outcrop mine on the Main Reef",
+   "risk": {
+    "rai": 64.62,
+    "band": "high",
+    "logit": 0.6022,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6009,
+     "access": 0.6335,
+     "pressure": 1.0,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.2018,
+     "access": 1.9005,
+     "pressure": 1.5,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-032",
+   "name": "Marievale",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Nigel",
+   "lat": -26.36,
+   "lon": 28.505,
+   "precisionM": 2500,
+   "field": "Far East Rand",
+   "method": "underground",
+   "opened": 1938,
+   "closed": 1997,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 1800.0,
+   "production": {
+    "low": 100.0,
+    "high": 300.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 8.0,
+    "high": 45.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2023
+   },
+   "flooded": "yes",
+   "sealed": false,
+   "notes": "Adjacent to Marievale Bird Sanctuary wetland",
+   "risk": {
+    "rai": 62.57,
+    "band": "high",
+    "logit": 0.5137,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6009,
+     "access": 0.3511,
+     "pressure": 0.7778,
+     "history": 0.6065
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.2018,
+     "access": 1.0534,
+     "pressure": 1.1667,
+     "history": 1.0918
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-010",
+   "name": "Simmer and Jack",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Germiston",
+   "lat": -26.228,
+   "lon": 28.17,
+   "precisionM": 1500,
+   "field": "East Rand",
+   "method": "underground",
+   "opened": 1887,
+   "closed": 1964,
+   "status": "derelict",
+   "datesConfidence": "medium",
+   "maxDepthM": 1800.0,
+   "production": {
+    "low": 100.0,
+    "high": 400.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 8.0,
+    "high": 60.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 62.04,
+    "band": "high",
+    "logit": 0.491,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6446,
+     "access": 0.593,
+     "pressure": 0.9485,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.2892,
+     "access": 1.779,
+     "pressure": 1.4228,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-002",
+   "name": "Robinson Deep",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Johannesburg (Turffontein)",
+   "lat": -26.239,
+   "lon": 28.033,
+   "precisionM": 1500,
+   "field": "Central Rand",
+   "method": "underground",
+   "opened": 1898,
+   "closed": 1966,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 2500.0,
+   "production": {
+    "low": 200.0,
+    "high": 600.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 16.0,
+    "high": 90.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "Deep-level Central Rand mine; surface dumps reprocessed",
+   "risk": {
+    "rai": 60.24,
+    "band": "high",
+    "logit": 0.4157,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.7232,
+     "access": 0.4965,
+     "pressure": 0.9865,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.4465,
+     "access": 1.4895,
+     "pressure": 1.4797,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-003",
+   "name": "City Deep",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Johannesburg (City Deep)",
+   "lat": -26.229,
+   "lon": 28.075,
+   "precisionM": 1500,
+   "field": "Central Rand",
+   "method": "underground",
+   "opened": 1899,
+   "closed": 1987,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 2500.0,
+   "production": {
+    "low": 200.0,
+    "high": 600.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 16.0,
+    "high": 90.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "Deep-level Central Rand mine",
+   "risk": {
+    "rai": 60.15,
+    "band": "high",
+    "logit": 0.4118,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.7232,
+     "access": 0.4947,
+     "pressure": 0.9875,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.4465,
+     "access": 1.4842,
+     "pressure": 1.4812,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-011",
+   "name": "Rose Deep",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Germiston",
+   "lat": -26.236,
+   "lon": 28.145,
+   "precisionM": 1500,
+   "field": "East Rand",
+   "method": "underground",
+   "opened": 1895,
+   "closed": 1953,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 1800.0,
+   "production": {
+    "low": 100.0,
+    "high": 300.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 8.0,
+    "high": 45.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 60.13,
+    "band": "high",
+    "logit": 0.4108,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6009,
+     "access": 0.5931,
+     "pressure": 0.9532,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.2018,
+     "access": 1.7793,
+     "pressure": 1.4298,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-005",
+   "name": "Wesselton",
+   "commodity": "diamonds",
+   "secondary": [],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Kimberley",
+   "lat": -28.763,
+   "lon": 24.825,
+   "precisionM": 1000,
+   "field": "Kimberley kimberlite cluster",
+   "method": "both",
+   "opened": 1890,
+   "closed": 2005,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 900.0,
+   "production": {
+    "low": 20.0,
+    "high": 60.0,
+    "unit": "Mct",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.4,
+    "high": 3.0,
+    "unit": "Mct",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2023
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 59.85,
+    "band": "high",
+    "logit": 0.3993,
+    "factors": {
+     "commodity": 0.85,
+     "residual": 0.4339,
+     "access": 0.6102,
+     "pressure": 0.6061,
+     "history": 0.6065
+    },
+    "contributions": {
+     "commodity": 1.7,
+     "residual": 0.8677,
+     "access": 1.8306,
+     "pressure": 0.9092,
+     "history": 1.0918
+    }
+   }
+  },
+  {
+   "id": "ZA-MP-007",
+   "name": "Transvaal & Delagoa Bay Colliery",
+   "commodity": "coal",
+   "secondary": [],
+   "province": "MP",
+   "provinceName": "Mpumalanga",
+   "locality": "eMalahleni (Witbank)",
+   "lat": -25.88,
+   "lon": 29.16,
+   "precisionM": 3000,
+   "field": "Witbank coalfield",
+   "method": "underground",
+   "opened": 1896,
+   "closed": 1953,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 120.0,
+   "production": {
+    "low": 20.0,
+    "high": 60.0,
+    "unit": "Mt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 6.0,
+    "high": 30.0,
+    "unit": "Mt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2023
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Old Witbank workings: spontaneous combustion, subsidence and illegal coal digging",
+   "risk": {
+    "rai": 58.88,
+    "band": "high",
+    "logit": 0.359,
+    "factors": {
+     "commodity": 0.4,
+     "residual": 0.1818,
+     "access": 0.9988,
+     "pressure": 0.7383,
+     "history": 0.6065
+    },
+    "contributions": {
+     "commodity": 0.8,
+     "residual": 0.3636,
+     "access": 2.9963,
+     "pressure": 1.1074,
+     "history": 1.0918
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-014",
+   "name": "Bambanani",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Welkom",
+   "lat": -27.96,
+   "lon": 26.79,
+   "precisionM": 2500,
+   "field": "Free State (Welkom)",
+   "method": "underground",
+   "opened": 1965,
+   "closed": 2023,
+   "status": "care_maintenance",
+   "datesConfidence": "low",
+   "maxDepthM": 2300.0,
+   "production": {
+    "low": 100.0,
+    "high": 400.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 8.0,
+    "high": 60.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2023
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 57.52,
+    "band": "high",
+    "logit": 0.3032,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6446,
+     "access": 0.275,
+     "pressure": 0.7314,
+     "history": 0.6065
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.2892,
+     "access": 0.8251,
+     "pressure": 1.0971,
+     "history": 1.0918
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-003",
+   "name": "Dutoitspan",
+   "commodity": "diamonds",
+   "secondary": [],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Kimberley",
+   "lat": -28.748,
+   "lon": 24.79,
+   "precisionM": 1000,
+   "field": "Kimberley kimberlite cluster",
+   "method": "both",
+   "opened": 1870,
+   "closed": null,
+   "status": "care_maintenance",
+   "datesConfidence": "low",
+   "maxDepthM": 800.0,
+   "production": {
+    "low": 20.0,
+    "high": 60.0,
+    "unit": "Mct",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.4,
+    "high": 3.0,
+    "unit": "Mct",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2024
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 57.5,
+    "band": "high",
+    "logit": 0.3024,
+    "factors": {
+     "commodity": 0.85,
+     "residual": 0.4339,
+     "access": 0.4885,
+     "pressure": 0.6529,
+     "history": 0.7165
+    },
+    "contributions": {
+     "commodity": 1.7,
+     "residual": 0.8677,
+     "access": 1.4656,
+     "pressure": 0.9793,
+     "history": 1.2898
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-008",
+   "name": "Koingnaas",
+   "commodity": "diamonds",
+   "secondary": [],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Koingnaas",
+   "lat": -30.19,
+   "lon": 17.28,
+   "precisionM": 3000,
+   "field": "Namaqualand coastal placers",
+   "method": "alluvial",
+   "opened": 1970,
+   "closed": 2011,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 30.0,
+   "production": {
+    "low": 5.0,
+    "high": 20.0,
+    "unit": "Mct",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.25,
+    "high": 2.4,
+    "unit": "Mct",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2023
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 53.38,
+    "band": "high",
+    "logit": 0.1354,
+    "factors": {
+     "commodity": 0.85,
+     "residual": 0.3685,
+     "access": 0.831,
+     "pressure": 0.0757,
+     "history": 0.6065
+    },
+    "contributions": {
+     "commodity": 1.7,
+     "residual": 0.7371,
+     "access": 2.493,
+     "pressure": 0.1136,
+     "history": 1.0918
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-004",
+   "name": "Western Holdings",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Welkom",
+   "lat": -27.95,
+   "lon": 26.69,
+   "precisionM": 2000,
+   "field": "Free State (Welkom)",
+   "method": "underground",
+   "opened": 1953,
+   "closed": 1999,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 2200.0,
+   "production": {
+    "low": 300.0,
+    "high": 700.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 24.0,
+    "high": 105.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 51.23,
+    "band": "high",
+    "logit": 0.0494,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.7582,
+     "access": 0.4756,
+     "pressure": 0.7375,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.5165,
+     "access": 1.4267,
+     "pressure": 1.1062,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NW-014",
+   "name": "Lichtenburg Alluvial Diggings",
+   "commodity": "diamonds",
+   "secondary": [],
+   "province": "NW",
+   "provinceName": "North West",
+   "locality": "Lichtenburg (Grasfontein)",
+   "lat": -26.15,
+   "lon": 26.16,
+   "precisionM": 5000,
+   "field": "Lichtenburg alluvials",
+   "method": "alluvial",
+   "opened": 1926,
+   "closed": 1935,
+   "status": "derelict",
+   "datesConfidence": "medium",
+   "maxDepthM": 30.0,
+   "production": {
+    "low": 5.0,
+    "high": 10.0,
+    "unit": "Mct",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.25,
+    "high": 1.2,
+    "unit": "Mct",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "1926 Grasfontein diamond rush drew tens of thousands of diggers",
+   "risk": {
+    "rai": 50.24,
+    "band": "high",
+    "logit": 0.0098,
+    "factors": {
+     "commodity": 0.85,
+     "residual": 0.2382,
+     "access": 1.0,
+     "pressure": 0.5557,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 1.7,
+     "residual": 0.4763,
+     "access": 3.0,
+     "pressure": 0.8335,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-MP-001",
+   "name": "Sheba",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "MP",
+   "provinceName": "Mpumalanga",
+   "locality": "Barberton (Eureka City)",
+   "lat": -25.713,
+   "lon": 31.15,
+   "precisionM": 3000,
+   "field": "Barberton Greenstone Belt",
+   "method": "underground",
+   "opened": 1885,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "medium",
+   "maxDepthM": 1200.0,
+   "production": {
+    "low": 50.0,
+    "high": 150.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 4.0,
+    "high": 22.5,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2024
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "One of the oldest operating gold mines in the world",
+   "risk": {
+    "rai": 50.0,
+    "band": "high",
+    "logit": 0.0001,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.4817,
+     "access": 0.3132,
+     "pressure": 0.5383,
+     "history": 0.7165
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 0.9634,
+     "access": 0.9396,
+     "pressure": 0.8074,
+     "history": 1.2898
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-024",
+   "name": "Blyvooruitzicht",
+   "commodity": "gold",
+   "secondary": [
+    "uranium"
+   ],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Carletonville",
+   "lat": -26.387,
+   "lon": 27.382,
+   "precisionM": 2000,
+   "field": "Far West Rand",
+   "method": "underground",
+   "opened": 1942,
+   "closed": null,
+   "status": "restarted",
+   "datesConfidence": "medium",
+   "maxDepthM": 3000.0,
+   "production": {
+    "low": 900.0,
+    "high": 1500.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 72.0,
+    "high": 225.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2018
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "Liquidated 2013; heavily mined illegally while dormant; restarted by a new operator",
+   "risk": {
+    "rai": 48.86,
+    "band": "elevated",
+    "logit": -0.0455,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.9079,
+     "access": 0.1852,
+     "pressure": 0.7391,
+     "history": 0.2636
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.8157,
+     "access": 0.5556,
+     "pressure": 1.1087,
+     "history": 0.4745
+    }
+   }
+  },
+  {
+   "id": "ZA-NW-005",
+   "name": "Great Noligwa (Vaal Reefs)",
+   "commodity": "gold",
+   "secondary": [
+    "uranium"
+   ],
+   "province": "NW",
+   "provinceName": "North West",
+   "locality": "Orkney",
+   "lat": -26.99,
+   "lon": 26.7,
+   "precisionM": 2500,
+   "field": "Klerksdorp (KOSH)",
+   "method": "underground",
+   "opened": 1972,
+   "closed": 2020,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 2600.0,
+   "production": {
+    "low": 800.0,
+    "high": 2000.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 64.0,
+    "high": 300.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "Part of the former Vaal Reefs complex",
+   "risk": {
+    "rai": 47.29,
+    "band": "elevated",
+    "logit": -0.1084,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.9445,
+     "access": 0.3322,
+     "pressure": 0.6706,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.8891,
+     "access": 0.9967,
+     "pressure": 1.0059,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-021",
+   "name": "Libanon",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Westonaria",
+   "lat": -26.35,
+   "lon": 27.605,
+   "precisionM": 2500,
+   "field": "Far West Rand",
+   "method": "underground",
+   "opened": 1949,
+   "closed": 2001,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 2500.0,
+   "production": {
+    "low": 200.0,
+    "high": 500.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 16.0,
+    "high": 75.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 47.16,
+    "band": "elevated",
+    "logit": -0.1137,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6961,
+     "access": 0.4371,
+     "pressure": 0.7884,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.3923,
+     "access": 1.3114,
+     "pressure": 1.1826,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-MP-002",
+   "name": "Fairview",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "MP",
+   "provinceName": "Mpumalanga",
+   "locality": "Barberton",
+   "lat": -25.755,
+   "lon": 31.105,
+   "precisionM": 3000,
+   "field": "Barberton Greenstone Belt",
+   "method": "underground",
+   "opened": 1884,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "medium",
+   "maxDepthM": 2000.0,
+   "production": {
+    "low": 100.0,
+    "high": 250.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 8.0,
+    "high": 37.5,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2023
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 46.81,
+    "band": "elevated",
+    "logit": -0.1276,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.5743,
+     "access": 0.2638,
+     "pressure": 0.5603,
+     "history": 0.6065
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.1486,
+     "access": 0.7915,
+     "pressure": 0.8405,
+     "history": 1.0918
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-020",
+   "name": "Venterspost",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Venterspost",
+   "lat": -26.305,
+   "lon": 27.53,
+   "precisionM": 2500,
+   "field": "Far West Rand",
+   "method": "underground",
+   "opened": 1939,
+   "closed": 2002,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 2500.0,
+   "production": {
+    "low": 200.0,
+    "high": 500.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 16.0,
+    "high": 75.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 46.05,
+    "band": "elevated",
+    "logit": -0.1583,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6961,
+     "access": 0.4358,
+     "pressure": 0.7613,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.3923,
+     "access": 1.3075,
+     "pressure": 1.1419,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-035",
+   "name": "Brakpan Mines",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Brakpan",
+   "lat": -26.24,
+   "lon": 28.35,
+   "precisionM": 2000,
+   "field": "Far East Rand",
+   "method": "underground",
+   "opened": 1911,
+   "closed": 1963,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 1800.0,
+   "production": {
+    "low": 200.0,
+    "high": 500.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 16.0,
+    "high": 75.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "yes",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 46.01,
+    "band": "elevated",
+    "logit": -0.1599,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6961,
+     "access": 0.3558,
+     "pressure": 0.9203,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.3923,
+     "access": 1.0674,
+     "pressure": 1.3804,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-030",
+   "name": "Doornfontein",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Carletonville",
+   "lat": -26.39,
+   "lon": 27.34,
+   "precisionM": 2500,
+   "field": "Far West Rand",
+   "method": "underground",
+   "opened": 1949,
+   "closed": 2000,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 2500.0,
+   "production": {
+    "low": 200.0,
+    "high": 500.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 16.0,
+    "high": 75.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 44.51,
+    "band": "elevated",
+    "logit": -0.2203,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6961,
+     "access": 0.4383,
+     "pressure": 0.715,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.3923,
+     "access": 1.3149,
+     "pressure": 1.0726,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-037",
+   "name": "New Kleinfontein",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Benoni",
+   "lat": -26.18,
+   "lon": 28.3,
+   "precisionM": 2000,
+   "field": "East Rand",
+   "method": "underground",
+   "opened": 1894,
+   "closed": 1960,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 1500.0,
+   "production": {
+    "low": 100.0,
+    "high": 300.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 8.0,
+    "high": 45.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "yes",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 43.97,
+    "band": "elevated",
+    "logit": -0.2424,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6009,
+     "access": 0.3801,
+     "pressure": 0.9436,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.2018,
+     "access": 1.1404,
+     "pressure": 1.4154,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-038",
+   "name": "Van Ryn Deep",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Benoni",
+   "lat": -26.17,
+   "lon": 28.33,
+   "precisionM": 2000,
+   "field": "East Rand",
+   "method": "underground",
+   "opened": 1902,
+   "closed": 1965,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 1500.0,
+   "production": {
+    "low": 100.0,
+    "high": 300.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 8.0,
+    "high": 45.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "yes",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 43.59,
+    "band": "elevated",
+    "logit": -0.258,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6009,
+     "access": 0.3801,
+     "pressure": 0.9333,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.2018,
+     "access": 1.1402,
+     "pressure": 1.4,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-034",
+   "name": "Daggafontein",
+   "commodity": "gold",
+   "secondary": [
+    "uranium"
+   ],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Springs",
+   "lat": -26.3,
+   "lon": 28.47,
+   "precisionM": 2500,
+   "field": "Far East Rand",
+   "method": "underground",
+   "opened": 1932,
+   "closed": 1977,
+   "status": "derelict",
+   "datesConfidence": "medium",
+   "maxDepthM": 2000.0,
+   "production": {
+    "low": 300.0,
+    "high": 600.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 24.0,
+    "high": 90.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "yes",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 43.37,
+    "band": "elevated",
+    "logit": -0.2669,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.7362,
+     "access": 0.3389,
+     "pressure": 0.8294,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.4724,
+     "access": 1.0166,
+     "pressure": 1.2441,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-007",
+   "name": "Merriespruit",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Virginia",
+   "lat": -28.115,
+   "lon": 26.855,
+   "precisionM": 2000,
+   "field": "Free State (Welkom)",
+   "method": "underground",
+   "opened": 1956,
+   "closed": 1996,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 2000.0,
+   "production": {
+    "low": 100.0,
+    "high": 300.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 8.0,
+    "high": 45.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "22 Feb 1994 tailings dam failure killed 17 people",
+   "risk": {
+    "rai": 41.35,
+    "band": "elevated",
+    "logit": -0.3494,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6009,
+     "access": 0.5029,
+     "pressure": 0.6268,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.2018,
+     "access": 1.5086,
+     "pressure": 0.9402,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-022",
+   "name": "West Driefontein",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Carletonville",
+   "lat": -26.405,
+   "lon": 27.49,
+   "precisionM": 2500,
+   "field": "Far West Rand",
+   "method": "underground",
+   "opened": 1952,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "medium",
+   "maxDepthM": 3400.0,
+   "production": {
+    "low": 1500.0,
+    "high": 2500.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 120.0,
+    "high": 375.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 41.17,
+    "band": "elevated",
+    "logit": -0.3568,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 1.0,
+     "access": 0.1801,
+     "pressure": 0.7353,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 2.0,
+     "access": 0.5402,
+     "pressure": 1.103,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-015",
+   "name": "Luipaardsvlei",
+   "commodity": "gold",
+   "secondary": [
+    "uranium"
+   ],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Krugersdorp",
+   "lat": -26.115,
+   "lon": 27.74,
+   "precisionM": 2000,
+   "field": "West Rand",
+   "method": "underground",
+   "opened": 1888,
+   "closed": 1993,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 1800.0,
+   "production": {
+    "low": 100.0,
+    "high": 300.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 8.0,
+    "high": 45.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "yes",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 40.37,
+    "band": "elevated",
+    "logit": -0.3902,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6009,
+     "access": 0.353,
+     "pressure": 0.8993,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.2018,
+     "access": 1.059,
+     "pressure": 1.349,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-018",
+   "name": "Kloof",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Westonaria",
+   "lat": -26.405,
+   "lon": 27.585,
+   "precisionM": 2500,
+   "field": "Far West Rand",
+   "method": "underground",
+   "opened": 1968,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "medium",
+   "maxDepthM": 3500.0,
+   "production": {
+    "low": 1000.0,
+    "high": 2000.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 80.0,
+    "high": 300.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 39.26,
+    "band": "elevated",
+    "logit": -0.4366,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.9523,
+     "access": 0.175,
+     "pressure": 0.7559,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.9046,
+     "access": 0.525,
+     "pressure": 1.1338,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-026",
+   "name": "TauTona",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Carletonville",
+   "lat": -26.413,
+   "lon": 27.412,
+   "precisionM": 2000,
+   "field": "Far West Rand",
+   "method": "underground",
+   "opened": 1962,
+   "closed": 2018,
+   "status": "closed",
+   "datesConfidence": "medium",
+   "maxDepthM": 3900.0,
+   "production": {
+    "low": 600.0,
+    "high": 1200.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 48.0,
+    "high": 180.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 39.05,
+    "band": "elevated",
+    "logit": -0.4452,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.8603,
+     "access": 0.2457,
+     "pressure": 0.7313,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.7206,
+     "access": 0.7372,
+     "pressure": 1.097,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-MP-004",
+   "name": "Lily Mine",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "MP",
+   "provinceName": "Mpumalanga",
+   "locality": "Louisville (Barberton)",
+   "lat": -25.615,
+   "lon": 31.235,
+   "precisionM": 3000,
+   "field": "Barberton Greenstone Belt",
+   "method": "underground",
+   "opened": 2000,
+   "closed": 2016,
+   "status": "derelict",
+   "datesConfidence": "medium",
+   "maxDepthM": 500.0,
+   "production": {
+    "low": 3.0,
+    "high": 10.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.24,
+    "high": 1.5,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "5 Feb 2016 crown-pillar collapse; three workers in a surface container were never recovered",
+   "risk": {
+    "rai": 38.27,
+    "band": "elevated",
+    "logit": -0.4781,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.1135,
+     "access": 0.8396,
+     "pressure": 0.5174,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 0.227,
+     "access": 2.5188,
+     "pressure": 0.7761,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-008",
+   "name": "Loraine",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Allanridge",
+   "lat": -27.755,
+   "lon": 26.625,
+   "precisionM": 2500,
+   "field": "Free State (Welkom)",
+   "method": "underground",
+   "opened": 1955,
+   "closed": 2003,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 2000.0,
+   "production": {
+    "low": 100.0,
+    "high": 300.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 8.0,
+    "high": 45.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 37.95,
+    "band": "elevated",
+    "logit": -0.4917,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6009,
+     "access": 0.4945,
+     "pressure": 0.5487,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.2018,
+     "access": 1.4835,
+     "pressure": 0.823,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-021",
+   "name": "Kopanang",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Orkney",
+   "lat": -27.0,
+   "lon": 26.735,
+   "precisionM": 2500,
+   "field": "Klerksdorp (KOSH)",
+   "method": "underground",
+   "opened": 1984,
+   "closed": 2018,
+   "status": "care_maintenance",
+   "datesConfidence": "low",
+   "maxDepthM": 2300.0,
+   "production": {
+    "low": 300.0,
+    "high": 600.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 24.0,
+    "high": 90.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "Vaal River operations straddle the NW/FS boundary; position falls on the Free State bank",
+   "risk": {
+    "rai": 37.16,
+    "band": "elevated",
+    "logit": -0.5254,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.7362,
+     "access": 0.342,
+     "pressure": 0.6508,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.4724,
+     "access": 1.0259,
+     "pressure": 0.9763,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-023",
+   "name": "East Driefontein",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Carletonville",
+   "lat": -26.41,
+   "lon": 27.43,
+   "precisionM": 2500,
+   "field": "Far West Rand",
+   "method": "underground",
+   "opened": 1972,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "medium",
+   "maxDepthM": 3400.0,
+   "production": {
+    "low": 800.0,
+    "high": 1500.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 64.0,
+    "high": 225.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 36.52,
+    "band": "elevated",
+    "logit": -0.5527,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.903,
+     "access": 0.1801,
+     "pressure": 0.7341,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.8059,
+     "access": 0.5402,
+     "pressure": 1.1011,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-033",
+   "name": "Sub Nigel",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Nigel",
+   "lat": -26.43,
+   "lon": 28.47,
+   "precisionM": 2500,
+   "field": "Far East Rand",
+   "method": "underground",
+   "opened": 1909,
+   "closed": 1971,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 2500.0,
+   "production": {
+    "low": 200.0,
+    "high": 500.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 16.0,
+    "high": 75.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "yes",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 36.24,
+    "band": "elevated",
+    "logit": -0.5651,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6961,
+     "access": 0.2978,
+     "pressure": 0.7661,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.3923,
+     "access": 0.8935,
+     "pressure": 1.1492,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NW-008",
+   "name": "Tau Lekoa",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "NW",
+   "provinceName": "North West",
+   "locality": "Orkney",
+   "lat": -26.95,
+   "lon": 26.65,
+   "precisionM": 2500,
+   "field": "Klerksdorp (KOSH)",
+   "method": "underground",
+   "opened": 1990,
+   "closed": 2018,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 1500.0,
+   "production": {
+    "low": 50.0,
+    "high": 150.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 4.0,
+    "high": 22.5,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 35.84,
+    "band": "elevated",
+    "logit": -0.5824,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.4817,
+     "access": 0.4654,
+     "pressure": 0.7054,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 0.9634,
+     "access": 1.3961,
+     "pressure": 1.0581,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-029",
+   "name": "Deelkraal",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Carletonville",
+   "lat": -26.465,
+   "lon": 27.3,
+   "precisionM": 2500,
+   "field": "Far West Rand",
+   "method": "underground",
+   "opened": 1980,
+   "closed": 2004,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 3000.0,
+   "production": {
+    "low": 100.0,
+    "high": 300.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 8.0,
+    "high": 45.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 33.86,
+    "band": "elevated",
+    "logit": -0.6695,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6009,
+     "access": 0.3767,
+     "pressure": 0.6658,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.2018,
+     "access": 1.13,
+     "pressure": 0.9987,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-039",
+   "name": "Cullinan (Premier)",
+   "commodity": "diamonds",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Cullinan",
+   "lat": -25.672,
+   "lon": 28.52,
+   "precisionM": 1000,
+   "field": "Premier kimberlite",
+   "method": "both",
+   "opened": 1903,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "high",
+   "maxDepthM": 1100.0,
+   "production": {
+    "low": 100.0,
+    "high": 150.0,
+    "unit": "Mct",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 2.0,
+    "high": 7.5,
+    "unit": "Mct",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Source of the 3 106 ct Cullinan Diamond (1905)",
+   "risk": {
+    "rai": 33.48,
+    "band": "elevated",
+    "logit": -0.6866,
+    "factors": {
+     "commodity": 0.85,
+     "residual": 0.7641,
+     "access": 0.3185,
+     "pressure": 0.7531,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 1.7,
+     "residual": 1.5281,
+     "access": 0.9556,
+     "pressure": 1.1296,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-016",
+   "name": "Doornkop",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Soweto (Doornkop)",
+   "lat": -26.235,
+   "lon": 27.83,
+   "precisionM": 2000,
+   "field": "West Rand",
+   "method": "underground",
+   "opened": 1985,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "low",
+   "maxDepthM": 2000.0,
+   "production": {
+    "low": 50.0,
+    "high": 200.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 4.0,
+    "high": 30.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 33.41,
+    "band": "elevated",
+    "logit": -0.6899,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.5241,
+     "access": 0.2638,
+     "pressure": 0.9803,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.0481,
+     "access": 0.7915,
+     "pressure": 1.4705,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-027",
+   "name": "Savuka",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Carletonville",
+   "lat": -26.43,
+   "lon": 27.395,
+   "precisionM": 2000,
+   "field": "Far West Rand",
+   "method": "underground",
+   "opened": 1962,
+   "closed": 2017,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 3700.0,
+   "production": {
+    "low": 200.0,
+    "high": 500.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 16.0,
+    "high": 75.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 32.51,
+    "band": "elevated",
+    "logit": -0.7304,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6961,
+     "access": 0.267,
+     "pressure": 0.7175,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.3923,
+     "access": 0.8011,
+     "pressure": 1.0762,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-015",
+   "name": "Unisel",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Welkom",
+   "lat": -28.03,
+   "lon": 26.77,
+   "precisionM": 2500,
+   "field": "Free State (Welkom)",
+   "method": "underground",
+   "opened": 1980,
+   "closed": 2021,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 2000.0,
+   "production": {
+    "low": 50.0,
+    "high": 200.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 4.0,
+    "high": 30.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 31.99,
+    "band": "elevated",
+    "logit": -0.7544,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.5241,
+     "access": 0.3727,
+     "pressure": 0.7196,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.0481,
+     "access": 1.118,
+     "pressure": 1.0795,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-019",
+   "name": "South Deep",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Westonaria",
+   "lat": -26.42,
+   "lon": 27.67,
+   "precisionM": 2500,
+   "field": "Far West Rand",
+   "method": "underground",
+   "opened": 1961,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "low",
+   "maxDepthM": 3000.0,
+   "production": {
+    "low": 300.0,
+    "high": 600.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 24.0,
+    "high": 90.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Large remaining mechanised resource",
+   "risk": {
+    "rai": 31.98,
+    "band": "elevated",
+    "logit": -0.7547,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.7362,
+     "access": 0.2018,
+     "pressure": 0.7784,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.4724,
+     "access": 0.6053,
+     "pressure": 1.1676,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-025",
+   "name": "Mponeng",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Carletonville",
+   "lat": -26.429,
+   "lon": 27.427,
+   "precisionM": 2000,
+   "field": "Far West Rand",
+   "method": "underground",
+   "opened": 1986,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "high",
+   "maxDepthM": 4000.0,
+   "production": {
+    "low": 500.0,
+    "high": 1000.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 40.0,
+    "high": 150.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Deepest mine in the world (about 4 km)",
+   "risk": {
+    "rai": 30.89,
+    "band": "elevated",
+    "logit": -0.8054,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.8276,
+     "access": 0.1518,
+     "pressure": 0.7228,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.6551,
+     "access": 0.4553,
+     "pressure": 1.0842,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-010",
+   "name": "Tshepong",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Odendaalsrus",
+   "lat": -27.84,
+   "lon": 26.655,
+   "precisionM": 2500,
+   "field": "Free State (Welkom)",
+   "method": "underground",
+   "opened": 1984,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "low",
+   "maxDepthM": 2400.0,
+   "production": {
+    "low": 300.0,
+    "high": 700.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 24.0,
+    "high": 105.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 30.57,
+    "band": "elevated",
+    "logit": -0.8202,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.7582,
+     "access": 0.2381,
+     "pressure": 0.6328,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.5165,
+     "access": 0.7142,
+     "pressure": 0.9492,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-GP-028",
+   "name": "Kusasalethu (Elandsrand)",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "GP",
+   "provinceName": "Gauteng",
+   "locality": "Carletonville",
+   "lat": -26.47,
+   "lon": 27.36,
+   "precisionM": 2500,
+   "field": "Far West Rand",
+   "method": "underground",
+   "opened": 1978,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "low",
+   "maxDepthM": 3400.0,
+   "production": {
+    "low": 300.0,
+    "high": 700.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 24.0,
+    "high": 105.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 28.57,
+    "band": "elevated",
+    "logit": -0.9164,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.7582,
+     "access": 0.1801,
+     "pressure": 0.6846,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.5165,
+     "access": 0.5402,
+     "pressure": 1.0269,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-009",
+   "name": "Beatrix",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Theunissen",
+   "lat": -28.25,
+   "lon": 26.77,
+   "precisionM": 3000,
+   "field": "Free State (Welkom)",
+   "method": "underground",
+   "opened": 1985,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "medium",
+   "maxDepthM": 2200.0,
+   "production": {
+    "low": 300.0,
+    "high": 700.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 24.0,
+    "high": 105.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 27.65,
+    "band": "elevated",
+    "logit": -0.9617,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.7582,
+     "access": 0.2509,
+     "pressure": 0.5128,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.5165,
+     "access": 0.7526,
+     "pressure": 0.7692,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-013",
+   "name": "Masimong",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Welkom",
+   "lat": -27.93,
+   "lon": 26.82,
+   "precisionM": 2500,
+   "field": "Free State (Welkom)",
+   "method": "underground",
+   "opened": 1984,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "low",
+   "maxDepthM": 2000.0,
+   "production": {
+    "low": 100.0,
+    "high": 300.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 8.0,
+    "high": 45.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Approaching end of life",
+   "risk": {
+    "rai": 27.3,
+    "band": "elevated",
+    "logit": -0.9796,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6009,
+     "access": 0.2638,
+     "pressure": 0.6847,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.2018,
+     "access": 0.7915,
+     "pressure": 1.027,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-016",
+   "name": "Jagersfontein",
+   "commodity": "diamonds",
+   "secondary": [],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Jagersfontein",
+   "lat": -29.768,
+   "lon": 25.423,
+   "precisionM": 1000,
+   "field": "Jagersfontein kimberlite",
+   "method": "both",
+   "opened": 1870,
+   "closed": 1971,
+   "status": "closed",
+   "datesConfidence": "medium",
+   "maxDepthM": 760.0,
+   "production": {
+    "low": 9.0,
+    "high": 11.0,
+    "unit": "Mct",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.18,
+    "high": 0.55,
+    "unit": "Mct",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Underground closed 1971; tailings retreatment ended after the 11 Sep 2022 tailings dam failure",
+   "risk": {
+    "rai": 26.25,
+    "band": "elevated",
+    "logit": -1.0333,
+    "factors": {
+     "commodity": 0.85,
+     "residual": 0.1359,
+     "access": 0.859,
+     "pressure": 0.2785,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 1.7,
+     "residual": 0.2718,
+     "access": 2.5771,
+     "pressure": 0.4178,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-022",
+   "name": "Moab Khotsong",
+   "commodity": "gold",
+   "secondary": [
+    "uranium"
+   ],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Orkney",
+   "lat": -26.995,
+   "lon": 26.8,
+   "precisionM": 2500,
+   "field": "Klerksdorp (KOSH)",
+   "method": "underground",
+   "opened": 2003,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "medium",
+   "maxDepthM": 3000.0,
+   "production": {
+    "low": 200.0,
+    "high": 500.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 16.0,
+    "high": 75.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Vaal River operations straddle the NW/FS boundary; position falls on the Free State bank",
+   "risk": {
+    "rai": 25.71,
+    "band": "elevated",
+    "logit": -1.0613,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.6961,
+     "access": 0.2018,
+     "pressure": 0.6274,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.3923,
+     "access": 0.6053,
+     "pressure": 0.9411,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-011",
+   "name": "Phakisa",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Odendaalsrus",
+   "lat": -27.86,
+   "lon": 26.69,
+   "precisionM": 2500,
+   "field": "Free State (Welkom)",
+   "method": "underground",
+   "opened": 2008,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "medium",
+   "maxDepthM": 2400.0,
+   "production": {
+    "low": 50.0,
+    "high": 200.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 4.0,
+    "high": 30.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 22.49,
+    "band": "low",
+    "logit": -1.2371,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.5241,
+     "access": 0.2381,
+     "pressure": 0.6671,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.0481,
+     "access": 0.7142,
+     "pressure": 1.0006,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-LP-001",
+   "name": "Venetia",
+   "commodity": "diamonds",
+   "secondary": [],
+   "province": "LP",
+   "provinceName": "Limpopo",
+   "locality": "Musina (Alldays road)",
+   "lat": -22.44,
+   "lon": 29.31,
+   "precisionM": 2000,
+   "field": "Venetia kimberlite cluster",
+   "method": "both",
+   "opened": 1992,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "high",
+   "maxDepthM": 1000.0,
+   "production": {
+    "low": 100.0,
+    "high": 200.0,
+    "unit": "Mct",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 2.0,
+    "high": 10.0,
+    "unit": "Mct",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Transitioned from open pit to underground in 2023",
+   "risk": {
+    "rai": 22.09,
+    "band": "low",
+    "logit": -1.2602,
+    "factors": {
+     "commodity": 0.85,
+     "residual": 0.85,
+     "access": 0.3236,
+     "pressure": 0.246,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 1.7,
+     "residual": 1.7,
+     "access": 0.9708,
+     "pressure": 0.3691,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-018",
+   "name": "Voorspoed",
+   "commodity": "diamonds",
+   "secondary": [],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Kroonstad",
+   "lat": -27.48,
+   "lon": 27.37,
+   "precisionM": 3000,
+   "field": "Voorspoed kimberlite",
+   "method": "open_pit",
+   "opened": 2008,
+   "closed": 2018,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 200.0,
+   "production": {
+    "low": 0.3,
+    "high": 0.8,
+    "unit": "Mct",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.006,
+    "high": 0.04,
+    "unit": "Mct",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Historic workings (1906) re-opened 2008",
+   "risk": {
+    "rai": 21.35,
+    "band": "low",
+    "logit": -1.3042,
+    "factors": {
+     "commodity": 0.85,
+     "residual": 0.0099,
+     "access": 0.7345,
+     "pressure": 0.515,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 1.7,
+     "residual": 0.0199,
+     "access": 2.2034,
+     "pressure": 0.7726,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-MP-003",
+   "name": "New Consort",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "MP",
+   "provinceName": "Mpumalanga",
+   "locality": "Barberton",
+   "lat": -25.71,
+   "lon": 31.0,
+   "precisionM": 3000,
+   "field": "Barberton Greenstone Belt",
+   "method": "underground",
+   "opened": 1918,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "low",
+   "maxDepthM": 1000.0,
+   "production": {
+    "low": 30.0,
+    "high": 100.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 2.4,
+    "high": 15.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 20.85,
+    "band": "low",
+    "logit": -1.3342,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.412,
+     "access": 0.3236,
+     "pressure": 0.5808,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 0.8239,
+     "access": 0.9708,
+     "pressure": 0.8712,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-009",
+   "name": "Alexander Bay (Alexkor)",
+   "commodity": "diamonds",
+   "secondary": [],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Alexander Bay",
+   "lat": -28.6,
+   "lon": 16.49,
+   "precisionM": 4000,
+   "field": "Namaqualand coastal placers",
+   "method": "alluvial",
+   "opened": 1928,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "medium",
+   "maxDepthM": 30.0,
+   "production": {
+    "low": 5.0,
+    "high": 15.0,
+    "unit": "Mct",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.25,
+    "high": 1.8,
+    "unit": "Mct",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": true,
+    "lastReportedYear": 2024
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "State-owned operator; illegal diamond mining reported along the lower Orange River coast",
+   "risk": {
+    "rai": 20.69,
+    "band": "low",
+    "logit": -1.3438,
+    "factors": {
+     "commodity": 0.85,
+     "residual": 0.3082,
+     "access": 0.35,
+     "pressure": 0.0,
+     "history": 0.7165
+    },
+    "contributions": {
+     "commodity": 1.7,
+     "residual": 0.6164,
+     "access": 1.05,
+     "pressure": 0.0,
+     "history": 1.2898
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-012",
+   "name": "Joel",
+   "commodity": "gold",
+   "secondary": [],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Theunissen",
+   "lat": -28.4,
+   "lon": 26.8,
+   "precisionM": 3000,
+   "field": "Free State (Welkom)",
+   "method": "underground",
+   "opened": 1987,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "low",
+   "maxDepthM": 1400.0,
+   "production": {
+    "low": 50.0,
+    "high": 200.0,
+    "unit": "t",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 4.0,
+    "high": 30.0,
+    "unit": "t",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 20.03,
+    "band": "low",
+    "logit": -1.3842,
+    "factors": {
+     "commodity": 1.0,
+     "residual": 0.5241,
+     "access": 0.3017,
+     "pressure": 0.4417,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 2.0,
+     "residual": 1.0481,
+     "access": 0.9052,
+     "pressure": 0.6625,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-006",
+   "name": "Finsch",
+   "commodity": "diamonds",
+   "secondary": [],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Lime Acres",
+   "lat": -28.38,
+   "lon": 23.45,
+   "precisionM": 2000,
+   "field": "Finsch kimberlite",
+   "method": "both",
+   "opened": 1967,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "medium",
+   "maxDepthM": 900.0,
+   "production": {
+    "low": 80.0,
+    "high": 150.0,
+    "unit": "Mct",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 1.6,
+    "high": 7.5,
+    "unit": "Mct",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 18.81,
+    "band": "low",
+    "logit": -1.4627,
+    "factors": {
+     "commodity": 0.85,
+     "residual": 0.7486,
+     "access": 0.3283,
+     "pressure": 0.2368,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 1.7,
+     "residual": 1.4972,
+     "access": 0.9849,
+     "pressure": 0.3552,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-004",
+   "name": "Bultfontein",
+   "commodity": "diamonds",
+   "secondary": [],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Kimberley",
+   "lat": -28.758,
+   "lon": 24.8,
+   "precisionM": 1000,
+   "field": "Kimberley kimberlite cluster",
+   "method": "both",
+   "opened": 1869,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "low",
+   "maxDepthM": 800.0,
+   "production": {
+    "low": 20.0,
+    "high": 60.0,
+    "unit": "Mct",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.4,
+    "high": 3.0,
+    "unit": "Mct",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 15.08,
+    "band": "low",
+    "logit": -1.7287,
+    "factors": {
+     "commodity": 0.85,
+     "residual": 0.4339,
+     "access": 0.2495,
+     "pressure": 0.6368,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 1.7,
+     "residual": 0.8677,
+     "access": 0.7484,
+     "pressure": 0.9551,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-LP-011",
+   "name": "Zaaiplaats Tin",
+   "commodity": "tin",
+   "secondary": [],
+   "province": "LP",
+   "provinceName": "Limpopo",
+   "locality": "Mokopane district",
+   "lat": -24.03,
+   "lon": 28.8,
+   "precisionM": 4000,
+   "field": "Bushveld granites",
+   "method": "underground",
+   "opened": 1908,
+   "closed": 1989,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 500.0,
+   "production": {
+    "low": 5.0,
+    "high": 20.0,
+    "unit": "kt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.1,
+    "high": 1.2,
+    "unit": "kt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 14.72,
+    "band": "low",
+    "logit": -1.757,
+    "factors": {
+     "commodity": 0.2,
+     "residual": 0.0912,
+     "access": 0.9752,
+     "pressure": 0.4901,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.4,
+     "residual": 0.1823,
+     "access": 2.9256,
+     "pressure": 0.7351,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-KZ-002",
+   "name": "Durnacol",
+   "commodity": "coal",
+   "secondary": [],
+   "province": "KZN",
+   "provinceName": "KwaZulu-Natal",
+   "locality": "Dannhauser",
+   "lat": -27.98,
+   "lon": 30.05,
+   "precisionM": 3000,
+   "field": "Klip River coalfield",
+   "method": "underground",
+   "opened": 1917,
+   "closed": 1999,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 300.0,
+   "production": {
+    "low": 20.0,
+    "high": 60.0,
+    "unit": "Mt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 6.0,
+    "high": 30.0,
+    "unit": "Mt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 13.57,
+    "band": "low",
+    "logit": -1.8517,
+    "factors": {
+     "commodity": 0.4,
+     "residual": 0.1818,
+     "access": 0.7318,
+     "pressure": 0.5262,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.8,
+     "residual": 0.3636,
+     "access": 2.1954,
+     "pressure": 0.7894,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-KZ-001",
+   "name": "Hlobane Colliery",
+   "commodity": "coal",
+   "secondary": [],
+   "province": "KZN",
+   "provinceName": "KwaZulu-Natal",
+   "locality": "Vryheid",
+   "lat": -27.7,
+   "lon": 31.0,
+   "precisionM": 3000,
+   "field": "Vryheid coalfield",
+   "method": "underground",
+   "opened": 1907,
+   "closed": 1998,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 300.0,
+   "production": {
+    "low": 30.0,
+    "high": 80.0,
+    "unit": "Mt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 9.0,
+    "high": 40.0,
+    "unit": "Mt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": false,
+   "notes": "12 Sep 1983 methane explosion killed 68 miners",
+   "risk": {
+    "rai": 12.78,
+    "band": "low",
+    "logit": -1.9207,
+    "factors": {
+     "commodity": 0.4,
+     "residual": 0.2,
+     "access": 0.7333,
+     "pressure": 0.453,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.8,
+     "residual": 0.3999,
+     "access": 2.1999,
+     "pressure": 0.6795,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-LP-012",
+   "name": "Rooiberg Tin",
+   "commodity": "tin",
+   "secondary": [],
+   "province": "LP",
+   "provinceName": "Limpopo",
+   "locality": "Rooiberg",
+   "lat": -24.77,
+   "lon": 27.73,
+   "precisionM": 3000,
+   "field": "Bushveld granites",
+   "method": "underground",
+   "opened": 1905,
+   "closed": 1993,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 800.0,
+   "production": {
+    "low": 20.0,
+    "high": 60.0,
+    "unit": "kt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.4,
+    "high": 3.6,
+    "unit": "kt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 12.42,
+    "band": "low",
+    "logit": -1.9529,
+    "factors": {
+     "commodity": 0.2,
+     "residual": 0.2,
+     "access": 0.8484,
+     "pressure": 0.4679,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.4,
+     "residual": 0.4,
+     "access": 2.5452,
+     "pressure": 0.7018,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-014",
+   "name": "O'okiep Copper",
+   "commodity": "copper",
+   "secondary": [],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Okiep",
+   "lat": -29.6,
+   "lon": 17.88,
+   "precisionM": 3000,
+   "field": "Namaqualand copper district",
+   "method": "underground",
+   "opened": 1862,
+   "closed": 2003,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 1200.0,
+   "production": {
+    "low": 1000.0,
+    "high": 2000.0,
+    "unit": "kt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 50.0,
+    "high": 200.0,
+    "unit": "kt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Historic copper district mined since the 1850s",
+   "risk": {
+    "rai": 11.96,
+    "band": "low",
+    "logit": -1.9961,
+    "factors": {
+     "commodity": 0.3,
+     "residual": 0.2507,
+     "access": 0.7826,
+     "pressure": 0.3698,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.6,
+     "residual": 0.5014,
+     "access": 2.3478,
+     "pressure": 0.5547,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-017",
+   "name": "Koffiefontein",
+   "commodity": "diamonds",
+   "secondary": [],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Koffiefontein",
+   "lat": -29.412,
+   "lon": 25.005,
+   "precisionM": 1000,
+   "field": "Koffiefontein kimberlite",
+   "method": "both",
+   "opened": 1870,
+   "closed": 2022,
+   "status": "care_maintenance",
+   "datesConfidence": "low",
+   "maxDepthM": 600.0,
+   "production": {
+    "low": 5.0,
+    "high": 10.0,
+    "unit": "Mct",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.1,
+    "high": 0.5,
+    "unit": "Mct",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 11.74,
+    "band": "low",
+    "logit": -2.0171,
+    "factors": {
+     "commodity": 0.85,
+     "residual": 0.1146,
+     "access": 0.5415,
+     "pressure": 0.2862,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 1.7,
+     "residual": 0.2292,
+     "access": 1.6244,
+     "pressure": 0.4292,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-019",
+   "name": "Kuruman Cape Blue",
+   "commodity": "asbestos",
+   "secondary": [],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Kuruman",
+   "lat": -27.45,
+   "lon": 23.42,
+   "precisionM": 4000,
+   "field": "Northern Cape crocidolite belt",
+   "method": "underground",
+   "opened": 1925,
+   "closed": 1997,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 200.0,
+   "production": {
+    "low": 100.0,
+    "high": 500.0,
+    "unit": "kt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 2.0,
+    "high": 30.0,
+    "unit": "kt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Crocidolite (blue asbestos) near Kuruman",
+   "risk": {
+    "rai": 10.31,
+    "band": "low",
+    "logit": -2.1629,
+    "factors": {
+     "commodity": 0.02,
+     "residual": 0.0123,
+     "access": 0.9835,
+     "pressure": 0.5481,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.04,
+     "residual": 0.0246,
+     "access": 2.9504,
+     "pressure": 0.8221,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-MP-011",
+   "name": "Secunda Collieries",
+   "commodity": "coal",
+   "secondary": [],
+   "province": "MP",
+   "provinceName": "Mpumalanga",
+   "locality": "Secunda",
+   "lat": -26.53,
+   "lon": 29.18,
+   "precisionM": 4000,
+   "field": "Highveld coalfield",
+   "method": "underground",
+   "opened": 1977,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "medium",
+   "maxDepthM": 250.0,
+   "production": {
+    "low": 1000.0,
+    "high": 2000.0,
+    "unit": "Mt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 300.0,
+    "high": 1000.0,
+    "unit": "Mt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 9.58,
+    "band": "low",
+    "logit": -2.2453,
+    "factors": {
+     "commodity": 0.4,
+     "residual": 0.4,
+     "access": 0.3482,
+     "pressure": 0.74,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.8,
+     "residual": 0.8,
+     "access": 1.0447,
+     "pressure": 1.11,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-LP-010",
+   "name": "Mafefe Asbestos",
+   "commodity": "asbestos",
+   "secondary": [],
+   "province": "LP",
+   "provinceName": "Limpopo",
+   "locality": "Mafefe",
+   "lat": -24.27,
+   "lon": 29.95,
+   "precisionM": 4000,
+   "field": "Transvaal crocidolite field",
+   "method": "underground",
+   "opened": 1930,
+   "closed": 1975,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 200.0,
+   "production": {
+    "low": 50.0,
+    "high": 200.0,
+    "unit": "kt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 1.0,
+    "high": 12.0,
+    "unit": "kt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Crocidolite; listed derelict asbestos site",
+   "risk": {
+    "rai": 9.07,
+    "band": "low",
+    "logit": -2.3052,
+    "factors": {
+     "commodity": 0.02,
+     "residual": 0.0087,
+     "access": 0.9959,
+     "pressure": 0.4331,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.04,
+     "residual": 0.0175,
+     "access": 2.9877,
+     "pressure": 0.6496,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-LP-009",
+   "name": "Penge Asbestos",
+   "commodity": "asbestos",
+   "secondary": [],
+   "province": "LP",
+   "provinceName": "Limpopo",
+   "locality": "Penge",
+   "lat": -24.37,
+   "lon": 30.3,
+   "precisionM": 3000,
+   "field": "Transvaal amosite field",
+   "method": "underground",
+   "opened": 1914,
+   "closed": 1992,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 400.0,
+   "production": {
+    "low": 1000.0,
+    "high": 3000.0,
+    "unit": "kt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 20.0,
+    "high": 180.0,
+    "unit": "kt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Amosite (brown asbestos) — severe community health legacy",
+   "risk": {
+    "rai": 8.97,
+    "band": "low",
+    "logit": -2.3171,
+    "factors": {
+     "commodity": 0.02,
+     "residual": 0.02,
+     "access": 0.9801,
+     "pressure": 0.4418,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.04,
+     "residual": 0.04,
+     "access": 2.9402,
+     "pressure": 0.6627,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-MP-006",
+   "name": "Msauli Asbestos",
+   "commodity": "asbestos",
+   "secondary": [],
+   "province": "MP",
+   "provinceName": "Mpumalanga",
+   "locality": "Barberton (Diepgezet)",
+   "lat": -25.92,
+   "lon": 30.95,
+   "precisionM": 3000,
+   "field": "Barberton Greenstone Belt",
+   "method": "underground",
+   "opened": 1940,
+   "closed": 2001,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 500.0,
+   "production": {
+    "low": 500.0,
+    "high": 1500.0,
+    "unit": "kt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 10.0,
+    "high": 90.0,
+    "unit": "kt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Chrysotile asbestos",
+   "risk": {
+    "rai": 8.73,
+    "band": "low",
+    "logit": -2.3475,
+    "factors": {
+     "commodity": 0.02,
+     "residual": 0.017,
+     "access": 0.9585,
+     "pressure": 0.4687,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.04,
+     "residual": 0.0341,
+     "access": 2.8754,
+     "pressure": 0.703,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-LP-008",
+   "name": "Thabazimbi Iron Ore",
+   "commodity": "iron",
+   "secondary": [],
+   "province": "LP",
+   "provinceName": "Limpopo",
+   "locality": "Thabazimbi",
+   "lat": -24.615,
+   "lon": 27.4,
+   "precisionM": 3000,
+   "field": "Thabazimbi",
+   "method": "open_pit",
+   "opened": 1934,
+   "closed": 2015,
+   "status": "closed",
+   "datesConfidence": "medium",
+   "maxDepthM": 250.0,
+   "production": {
+    "low": 150.0,
+    "high": 250.0,
+    "unit": "Mt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 3.0,
+    "high": 15.0,
+    "unit": "Mt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 7.26,
+    "band": "low",
+    "logit": -2.5473,
+    "factors": {
+     "commodity": 0.08,
+     "residual": 0.0458,
+     "access": 0.7862,
+     "pressure": 0.5617,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.16,
+     "residual": 0.0915,
+     "access": 2.3587,
+     "pressure": 0.8425,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NW-010",
+   "name": "Rustenburg Operations",
+   "commodity": "pgm",
+   "secondary": [
+    "chrome"
+   ],
+   "province": "NW",
+   "provinceName": "North West",
+   "locality": "Rustenburg",
+   "lat": -25.66,
+   "lon": 27.3,
+   "precisionM": 3000,
+   "field": "Bushveld Complex (Western Limb)",
+   "method": "underground",
+   "opened": 1929,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "medium",
+   "maxDepthM": 1500.0,
+   "production": {
+    "low": 50.0,
+    "high": 100.0,
+    "unit": "Moz",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 5.0,
+    "high": 20.0,
+    "unit": "Moz",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 6.91,
+    "band": "low",
+    "logit": -2.6008,
+    "factors": {
+     "commodity": 0.35,
+     "residual": 0.3041,
+     "access": 0.2957,
+     "pressure": 0.8026,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.7,
+     "residual": 0.6082,
+     "access": 0.8871,
+     "pressure": 1.204,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-LP-006",
+   "name": "Bokoni",
+   "commodity": "pgm",
+   "secondary": [],
+   "province": "LP",
+   "provinceName": "Limpopo",
+   "locality": "Atok",
+   "lat": -24.3,
+   "lon": 30.0,
+   "precisionM": 4000,
+   "field": "Bushveld Complex (Eastern Limb)",
+   "method": "underground",
+   "opened": 1969,
+   "closed": 2017,
+   "status": "care_maintenance",
+   "datesConfidence": "low",
+   "maxDepthM": 800.0,
+   "production": {
+    "low": 2.0,
+    "high": 6.0,
+    "unit": "Moz",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.2,
+    "high": 1.2,
+    "unit": "Moz",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 6.78,
+    "band": "low",
+    "logit": -2.6214,
+    "factors": {
+     "commodity": 0.35,
+     "residual": 0.062,
+     "access": 0.6369,
+     "pressure": 0.4293,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.7,
+     "residual": 0.124,
+     "access": 1.9106,
+     "pressure": 0.644,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-MP-008",
+   "name": "Middelburg Mine",
+   "commodity": "coal",
+   "secondary": [],
+   "province": "MP",
+   "provinceName": "Mpumalanga",
+   "locality": "Middelburg",
+   "lat": -25.8,
+   "lon": 29.45,
+   "precisionM": 3000,
+   "field": "Witbank coalfield",
+   "method": "open_pit",
+   "opened": 1982,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "low",
+   "maxDepthM": 80.0,
+   "production": {
+    "low": 300.0,
+    "high": 600.0,
+    "unit": "Mt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 9.0,
+    "high": 48.0,
+    "unit": "Mt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 6.67,
+    "band": "low",
+    "logit": -2.6378,
+    "factors": {
+     "commodity": 0.4,
+     "residual": 0.209,
+     "access": 0.35,
+     "pressure": 0.7295,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.8,
+     "residual": 0.4179,
+     "access": 1.05,
+     "pressure": 1.0943,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NW-015",
+   "name": "Pomfret Asbestos",
+   "commodity": "asbestos",
+   "secondary": [],
+   "province": "NW",
+   "provinceName": "North West",
+   "locality": "Pomfret",
+   "lat": -25.83,
+   "lon": 23.53,
+   "precisionM": 3000,
+   "field": "Northern Cape crocidolite belt",
+   "method": "underground",
+   "opened": 1955,
+   "closed": 1986,
+   "status": "derelict",
+   "datesConfidence": "low",
+   "maxDepthM": 300.0,
+   "production": {
+    "low": 300.0,
+    "high": 800.0,
+    "unit": "kt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 6.0,
+    "high": 48.0,
+    "unit": "kt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Crocidolite (blue asbestos); listed derelict asbestos site",
+   "risk": {
+    "rai": 6.4,
+    "band": "low",
+    "logit": -2.6823,
+    "factors": {
+     "commodity": 0.02,
+     "residual": 0.0144,
+     "access": 0.9894,
+     "pressure": 0.1872,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.04,
+     "residual": 0.0289,
+     "access": 2.9681,
+     "pressure": 0.2807,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NW-011",
+   "name": "Impala Rustenburg",
+   "commodity": "pgm",
+   "secondary": [
+    "chrome"
+   ],
+   "province": "NW",
+   "provinceName": "North West",
+   "locality": "Rustenburg (Bleskop)",
+   "lat": -25.53,
+   "lon": 27.2,
+   "precisionM": 3000,
+   "field": "Bushveld Complex (Western Limb)",
+   "method": "underground",
+   "opened": 1969,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "medium",
+   "maxDepthM": 1500.0,
+   "production": {
+    "low": 80.0,
+    "high": 150.0,
+    "unit": "Moz",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 8.0,
+    "high": 30.0,
+    "unit": "Moz",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 6.37,
+    "band": "low",
+    "logit": -2.687,
+    "factors": {
+     "commodity": 0.35,
+     "residual": 0.35,
+     "access": 0.2957,
+     "pressure": 0.6839,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.7,
+     "residual": 0.7,
+     "access": 0.8871,
+     "pressure": 1.0259,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-MP-009",
+   "name": "Kriel Colliery",
+   "commodity": "coal",
+   "secondary": [],
+   "province": "MP",
+   "provinceName": "Mpumalanga",
+   "locality": "Kriel",
+   "lat": -26.25,
+   "lon": 29.25,
+   "precisionM": 3000,
+   "field": "Highveld coalfield",
+   "method": "both",
+   "opened": 1975,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "low",
+   "maxDepthM": 150.0,
+   "production": {
+    "low": 200.0,
+    "high": 400.0,
+    "unit": "Mt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 30.0,
+    "high": 120.0,
+    "unit": "Mt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 6.08,
+    "band": "low",
+    "logit": -2.7368,
+    "factors": {
+     "commodity": 0.4,
+     "residual": 0.2674,
+     "access": 0.3494,
+     "pressure": 0.5869,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.8,
+     "residual": 0.5348,
+     "access": 1.0481,
+     "pressure": 0.8804,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NW-012",
+   "name": "Marikana",
+   "commodity": "pgm",
+   "secondary": [
+    "chrome"
+   ],
+   "province": "NW",
+   "provinceName": "North West",
+   "locality": "Marikana",
+   "lat": -25.7,
+   "lon": 27.48,
+   "precisionM": 3000,
+   "field": "Bushveld Complex (Western Limb)",
+   "method": "underground",
+   "opened": 1971,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "low",
+   "maxDepthM": 1500.0,
+   "production": {
+    "low": 40.0,
+    "high": 80.0,
+    "unit": "Moz",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 4.0,
+    "high": 16.0,
+    "unit": "Moz",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "16 Aug 2012 Marikana massacre: 34 striking mineworkers killed by police",
+   "risk": {
+    "rai": 5.54,
+    "band": "low",
+    "logit": -2.8364,
+    "factors": {
+     "commodity": 0.35,
+     "residual": 0.2802,
+     "access": 0.2957,
+     "pressure": 0.6775,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.7,
+     "residual": 0.5603,
+     "access": 0.8871,
+     "pressure": 1.0163,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-001",
+   "name": "Kimberley Mine (Big Hole)",
+   "commodity": "diamonds",
+   "secondary": [],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Kimberley",
+   "lat": -28.7383,
+   "lon": 24.7585,
+   "precisionM": 200,
+   "field": "Kimberley kimberlite cluster",
+   "method": "both",
+   "opened": 1871,
+   "closed": 1914,
+   "status": "rehabilitated",
+   "datesConfidence": "high",
+   "maxDepthM": 1097.0,
+   "production": {
+    "low": 14.5,
+    "high": 14.5,
+    "unit": "Mct",
+    "confidence": "high"
+   },
+   "residual": {
+    "low": 0.29,
+    "high": 0.725,
+    "unit": "Mct",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "yes",
+   "sealed": true,
+   "notes": "About 22.5 Mt excavated by hand; 2 722 kg (14.5 Mct) of diamonds; now a heritage site",
+   "risk": {
+    "rai": 5.35,
+    "band": "low",
+    "logit": -2.8722,
+    "factors": {
+     "commodity": 0.85,
+     "residual": 0.1793,
+     "access": 0.0184,
+     "pressure": 0.6759,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 1.7,
+     "residual": 0.3586,
+     "access": 0.0553,
+     "pressure": 1.0139,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-LP-007",
+   "name": "Grootegeluk",
+   "commodity": "coal",
+   "secondary": [],
+   "province": "LP",
+   "provinceName": "Limpopo",
+   "locality": "Lephalale",
+   "lat": -23.66,
+   "lon": 27.55,
+   "precisionM": 3000,
+   "field": "Waterberg coalfield",
+   "method": "open_pit",
+   "opened": 1980,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "medium",
+   "maxDepthM": 150.0,
+   "production": {
+    "low": 500.0,
+    "high": 900.0,
+    "unit": "Mt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 15.0,
+    "high": 72.0,
+    "unit": "Mt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 4.71,
+    "band": "low",
+    "logit": -3.0069,
+    "factors": {
+     "commodity": 0.4,
+     "residual": 0.2343,
+     "access": 0.35,
+     "pressure": 0.4496,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.8,
+     "residual": 0.4687,
+     "access": 1.05,
+     "pressure": 0.6744,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-020",
+   "name": "Sigma Colliery",
+   "commodity": "coal",
+   "secondary": [],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Sasolburg",
+   "lat": -26.81,
+   "lon": 27.86,
+   "precisionM": 3000,
+   "field": "Vereeniging-Sasolburg coalfield",
+   "method": "underground",
+   "opened": 1952,
+   "closed": 2006,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 200.0,
+   "production": {
+    "low": 50.0,
+    "high": 150.0,
+    "unit": "Mt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 15.0,
+    "high": 75.0,
+    "unit": "Mt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": true,
+   "notes": null,
+   "risk": {
+    "rai": 4.67,
+    "band": "low",
+    "logit": -3.0172,
+    "factors": {
+     "commodity": 0.4,
+     "residual": 0.2364,
+     "access": 0.1936,
+     "pressure": 0.7529,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.8,
+     "residual": 0.4728,
+     "access": 0.5807,
+     "pressure": 1.1294,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-LP-002",
+   "name": "Palabora",
+   "commodity": "copper",
+   "secondary": [
+    "phosphate",
+    "vermiculite"
+   ],
+   "province": "LP",
+   "provinceName": "Limpopo",
+   "locality": "Phalaborwa",
+   "lat": -23.995,
+   "lon": 31.125,
+   "precisionM": 2000,
+   "field": "Phalaborwa Complex",
+   "method": "both",
+   "opened": 1966,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "medium",
+   "maxDepthM": 1500.0,
+   "production": {
+    "low": 3000.0,
+    "high": 5000.0,
+    "unit": "kt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 150.0,
+    "high": 500.0,
+    "unit": "kt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Open pit deepened to about 760 m before block-cave underground",
+   "risk": {
+    "rai": 4.43,
+    "band": "low",
+    "logit": -3.0721,
+    "factors": {
+     "commodity": 0.3,
+     "residual": 0.3,
+     "access": 0.2957,
+     "pressure": 0.5605,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.6,
+     "residual": 0.6,
+     "access": 0.8871,
+     "pressure": 0.8408,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-LP-004",
+   "name": "Amandelbult",
+   "commodity": "pgm",
+   "secondary": [
+    "chrome"
+   ],
+   "province": "LP",
+   "provinceName": "Limpopo",
+   "locality": "Northam",
+   "lat": -24.8,
+   "lon": 27.33,
+   "precisionM": 3000,
+   "field": "Bushveld Complex (Western Limb)",
+   "method": "underground",
+   "opened": 1976,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "low",
+   "maxDepthM": 1200.0,
+   "production": {
+    "low": 40.0,
+    "high": 80.0,
+    "unit": "Moz",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 4.0,
+    "high": 16.0,
+    "unit": "Moz",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 4.31,
+    "band": "low",
+    "logit": -3.1005,
+    "factors": {
+     "commodity": 0.35,
+     "residual": 0.2802,
+     "access": 0.3132,
+     "pressure": 0.4664,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.7,
+     "residual": 0.5603,
+     "access": 0.9396,
+     "pressure": 0.6997,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-LP-003",
+   "name": "Mogalakwena",
+   "commodity": "pgm",
+   "secondary": [],
+   "province": "LP",
+   "provinceName": "Limpopo",
+   "locality": "Mokopane",
+   "lat": -24.03,
+   "lon": 28.95,
+   "precisionM": 4000,
+   "field": "Bushveld Complex (Northern Limb)",
+   "method": "open_pit",
+   "opened": 1993,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "low",
+   "maxDepthM": 300.0,
+   "production": {
+    "low": 20.0,
+    "high": 50.0,
+    "unit": "Moz",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.6,
+    "high": 4.0,
+    "unit": "Moz",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 4.14,
+    "band": "low",
+    "logit": -3.1427,
+    "factors": {
+     "commodity": 0.35,
+     "residual": 0.1395,
+     "access": 0.35,
+     "pressure": 0.5522,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.7,
+     "residual": 0.279,
+     "access": 1.05,
+     "pressure": 0.8283,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-MP-010",
+   "name": "Arnot Colliery",
+   "commodity": "coal",
+   "secondary": [],
+   "province": "MP",
+   "provinceName": "Mpumalanga",
+   "locality": "Arnot",
+   "lat": -25.94,
+   "lon": 29.8,
+   "precisionM": 3000,
+   "field": "Witbank coalfield",
+   "method": "underground",
+   "opened": 1974,
+   "closed": 2015,
+   "status": "closed",
+   "datesConfidence": "low",
+   "maxDepthM": 150.0,
+   "production": {
+    "low": 100.0,
+    "high": 250.0,
+    "unit": "Mt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 30.0,
+    "high": 125.0,
+    "unit": "Mt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "partial",
+   "sealed": true,
+   "notes": null,
+   "risk": {
+    "rai": 3.31,
+    "band": "low",
+    "logit": -3.3745,
+    "factors": {
+     "commodity": 0.4,
+     "residual": 0.2694,
+     "access": 0.1766,
+     "pressure": 0.5046,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.8,
+     "residual": 0.5388,
+     "access": 0.5297,
+     "pressure": 0.7569,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-LP-005",
+   "name": "Modikwa",
+   "commodity": "pgm",
+   "secondary": [],
+   "province": "LP",
+   "provinceName": "Limpopo",
+   "locality": "Burgersfort",
+   "lat": -24.65,
+   "lon": 30.12,
+   "precisionM": 3000,
+   "field": "Bushveld Complex (Eastern Limb)",
+   "method": "underground",
+   "opened": 2002,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "low",
+   "maxDepthM": 800.0,
+   "production": {
+    "low": 3.0,
+    "high": 8.0,
+    "unit": "Moz",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.3,
+    "high": 1.6,
+    "unit": "Moz",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 3.3,
+    "band": "low",
+    "logit": -3.3789,
+    "factors": {
+     "commodity": 0.35,
+     "residual": 0.078,
+     "access": 0.3326,
+     "pressure": 0.5115,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.7,
+     "residual": 0.156,
+     "access": 0.9979,
+     "pressure": 0.7672,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-LP-013",
+   "name": "Two Rivers",
+   "commodity": "pgm",
+   "secondary": [
+    "chrome"
+   ],
+   "province": "LP",
+   "provinceName": "Limpopo",
+   "locality": "Steelpoort (Dwarsrivier)",
+   "lat": -24.93,
+   "lon": 30.11,
+   "precisionM": 3000,
+   "field": "Bushveld Complex (Eastern Limb)",
+   "method": "underground",
+   "opened": 2007,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "low",
+   "maxDepthM": 800.0,
+   "production": {
+    "low": 3.0,
+    "high": 8.0,
+    "unit": "Moz",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.3,
+    "high": 1.6,
+    "unit": "Moz",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": "Steelpoort valley on the Limpopo/Mpumalanga boundary; position falls in Limpopo",
+   "risk": {
+    "rai": 3.04,
+    "band": "low",
+    "logit": -3.4625,
+    "factors": {
+     "commodity": 0.35,
+     "residual": 0.078,
+     "access": 0.3326,
+     "pressure": 0.4557,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.7,
+     "residual": 0.156,
+     "access": 0.9979,
+     "pressure": 0.6836,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-FS-019",
+   "name": "Coalbrook North Colliery",
+   "commodity": "coal",
+   "secondary": [],
+   "province": "FS",
+   "provinceName": "Free State",
+   "locality": "Sasolburg (Coalbrook)",
+   "lat": -26.86,
+   "lon": 27.77,
+   "precisionM": 3000,
+   "field": "Vereeniging-Sasolburg coalfield",
+   "method": "underground",
+   "opened": 1905,
+   "closed": 1960,
+   "status": "closed",
+   "datesConfidence": "medium",
+   "maxDepthM": 180.0,
+   "production": {
+    "low": 10.0,
+    "high": 40.0,
+    "unit": "Mt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 3.0,
+    "high": 20.0,
+    "unit": "Mt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "yes",
+   "sealed": true,
+   "notes": "21 Jan 1960 pillar collapse killed 435 miners, the worst mining disaster in SA history",
+   "risk": {
+    "rai": 2.99,
+    "band": "low",
+    "logit": -3.4785,
+    "factors": {
+     "commodity": 0.4,
+     "residual": 0.1559,
+     "access": 0.1212,
+     "pressure": 0.6974,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.8,
+     "residual": 0.3119,
+     "access": 0.3635,
+     "pressure": 1.0461,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NW-013",
+   "name": "Pilanesberg Platinum",
+   "commodity": "pgm",
+   "secondary": [],
+   "province": "NW",
+   "provinceName": "North West",
+   "locality": "Pilanesberg",
+   "lat": -25.15,
+   "lon": 26.98,
+   "precisionM": 3000,
+   "field": "Bushveld Complex (Western Limb)",
+   "method": "open_pit",
+   "opened": 2010,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "low",
+   "maxDepthM": 300.0,
+   "production": {
+    "low": 0.5,
+    "high": 2.0,
+    "unit": "Moz",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 0.015,
+    "high": 0.16,
+    "unit": "Moz",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 2.87,
+    "band": "low",
+    "logit": -3.5215,
+    "factors": {
+     "commodity": 0.35,
+     "residual": 0.0098,
+     "access": 0.35,
+     "pressure": 0.4726,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.7,
+     "residual": 0.0196,
+     "access": 1.05,
+     "pressure": 0.7089,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-015",
+   "name": "Prieska Copper",
+   "commodity": "copper",
+   "secondary": [
+    "zinc"
+   ],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Copperton",
+   "lat": -29.93,
+   "lon": 22.31,
+   "precisionM": 2000,
+   "field": "Areachap belt",
+   "method": "underground",
+   "opened": 1972,
+   "closed": 1991,
+   "status": "closed",
+   "datesConfidence": "medium",
+   "maxDepthM": 1100.0,
+   "production": {
+    "low": 300.0,
+    "high": 500.0,
+    "unit": "kt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 15.0,
+    "high": 50.0,
+    "unit": "kt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "yes",
+   "sealed": false,
+   "notes": "Being redeveloped by a new operator",
+   "risk": {
+    "rai": 2.31,
+    "band": "low",
+    "logit": -3.7424,
+    "factors": {
+     "commodity": 0.3,
+     "residual": 0.182,
+     "access": 0.3663,
+     "pressure": 0.1298,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.6,
+     "residual": 0.3641,
+     "access": 1.0988,
+     "pressure": 0.1947,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-012",
+   "name": "Mamatwan",
+   "commodity": "manganese",
+   "secondary": [],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Hotazel",
+   "lat": -27.38,
+   "lon": 22.97,
+   "precisionM": 3000,
+   "field": "Kalahari Manganese Field",
+   "method": "open_pit",
+   "opened": 1964,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "medium",
+   "maxDepthM": 100.0,
+   "production": {
+    "low": 100.0,
+    "high": 200.0,
+    "unit": "Mt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 2.0,
+    "high": 12.0,
+    "unit": "Mt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 1.64,
+    "band": "low",
+    "logit": -4.0955,
+    "factors": {
+     "commodity": 0.12,
+     "residual": 0.12,
+     "access": 0.35,
+     "pressure": 0.2497,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.24,
+     "residual": 0.24,
+     "access": 1.05,
+     "pressure": 0.3745,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-010",
+   "name": "Sishen",
+   "commodity": "iron",
+   "secondary": [],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Kathu",
+   "lat": -27.75,
+   "lon": 22.99,
+   "precisionM": 3000,
+   "field": "Northern Cape iron ore",
+   "method": "open_pit",
+   "opened": 1953,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "high",
+   "maxDepthM": 400.0,
+   "production": {
+    "low": 1000.0,
+    "high": 1500.0,
+    "unit": "Mt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 20.0,
+    "high": 90.0,
+    "unit": "Mt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 1.61,
+    "band": "low",
+    "logit": -4.1131,
+    "factors": {
+     "commodity": 0.08,
+     "residual": 0.08,
+     "access": 0.35,
+     "pressure": 0.3446,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.16,
+     "residual": 0.16,
+     "access": 1.05,
+     "pressure": 0.5169,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-011",
+   "name": "Kolomela",
+   "commodity": "iron",
+   "secondary": [],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Postmasburg",
+   "lat": -28.35,
+   "lon": 22.98,
+   "precisionM": 3000,
+   "field": "Northern Cape iron ore",
+   "method": "open_pit",
+   "opened": 2011,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "high",
+   "maxDepthM": 250.0,
+   "production": {
+    "low": 150.0,
+    "high": 250.0,
+    "unit": "Mt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 3.0,
+    "high": 15.0,
+    "unit": "Mt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 1.53,
+    "band": "low",
+    "logit": -4.1671,
+    "factors": {
+     "commodity": 0.08,
+     "residual": 0.0458,
+     "access": 0.35,
+     "pressure": 0.3543,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.16,
+     "residual": 0.0915,
+     "access": 1.05,
+     "pressure": 0.5314,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-013",
+   "name": "Nchwaning",
+   "commodity": "manganese",
+   "secondary": [],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Black Rock",
+   "lat": -27.13,
+   "lon": 22.85,
+   "precisionM": 3000,
+   "field": "Kalahari Manganese Field",
+   "method": "underground",
+   "opened": 1972,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "low",
+   "maxDepthM": 500.0,
+   "production": {
+    "low": 50.0,
+    "high": 150.0,
+    "unit": "Mt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 1.0,
+    "high": 9.0,
+    "unit": "Mt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 1.45,
+    "band": "low",
+    "logit": -4.2219,
+    "factors": {
+     "commodity": 0.12,
+     "residual": 0.1034,
+     "access": 0.343,
+     "pressure": 0.2015,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.24,
+     "residual": 0.2068,
+     "access": 1.029,
+     "pressure": 0.3023,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-017",
+   "name": "Gamsberg",
+   "commodity": "zinc",
+   "secondary": [],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Aggeneys",
+   "lat": -29.25,
+   "lon": 18.97,
+   "precisionM": 2000,
+   "field": "Aggeneys–Gamsberg",
+   "method": "open_pit",
+   "opened": 2019,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "high",
+   "maxDepthM": 300.0,
+   "production": {
+    "low": 300.0,
+    "high": 800.0,
+    "unit": "kt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 6.0,
+    "high": 48.0,
+    "unit": "kt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 1.35,
+    "band": "low",
+    "logit": -4.2939,
+    "factors": {
+     "commodity": 0.15,
+     "residual": 0.1271,
+     "access": 0.35,
+     "pressure": 0.0679,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.3,
+     "residual": 0.2542,
+     "access": 1.05,
+     "pressure": 0.1018,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-016",
+   "name": "Black Mountain",
+   "commodity": "zinc",
+   "secondary": [
+    "lead",
+    "copper"
+   ],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Aggeneys",
+   "lat": -29.24,
+   "lon": 18.84,
+   "precisionM": 2000,
+   "field": "Aggeneys–Gamsberg",
+   "method": "underground",
+   "opened": 1979,
+   "closed": null,
+   "status": "operating",
+   "datesConfidence": "high",
+   "maxDepthM": 1500.0,
+   "production": {
+    "low": 500.0,
+    "high": 1500.0,
+    "unit": "kt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 10.0,
+    "high": 90.0,
+    "unit": "kt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": false,
+   "notes": null,
+   "risk": {
+    "rai": 1.2,
+    "band": "low",
+    "logit": -4.4112,
+    "factors": {
+     "commodity": 0.15,
+     "residual": 0.15,
+     "access": 0.2957,
+     "pressure": 0.0678,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.3,
+     "residual": 0.3,
+     "access": 0.8871,
+     "pressure": 0.1017,
+     "history": 0.0
+    }
+   }
+  },
+  {
+   "id": "ZA-NC-018",
+   "name": "Koegas Asbestos",
+   "commodity": "asbestos",
+   "secondary": [],
+   "province": "NC",
+   "provinceName": "Northern Cape",
+   "locality": "Koegas",
+   "lat": -29.3,
+   "lon": 22.35,
+   "precisionM": 4000,
+   "field": "Northern Cape crocidolite belt",
+   "method": "underground",
+   "opened": 1893,
+   "closed": 1979,
+   "status": "rehabilitated",
+   "datesConfidence": "low",
+   "maxDepthM": 200.0,
+   "production": {
+    "low": 300.0,
+    "high": 800.0,
+    "unit": "kt",
+    "confidence": "low"
+   },
+   "residual": {
+    "low": 6.0,
+    "high": 48.0,
+    "unit": "kt",
+    "confidence": "modelled"
+   },
+   "illegalActivity": {
+    "reported": false,
+    "lastReportedYear": null
+   },
+   "flooded": "no",
+   "sealed": true,
+   "notes": "Crocidolite; partially rehabilitated",
+   "risk": {
+    "rai": 0.37,
+    "band": "low",
+    "logit": -5.5828,
+    "factors": {
+     "commodity": 0.02,
+     "residual": 0.0144,
+     "access": 0.0448,
+     "pressure": 0.1427,
+     "history": 0.0
+    },
+    "contributions": {
+     "commodity": 0.04,
+     "residual": 0.0289,
+     "access": 0.1344,
+     "pressure": 0.214,
+     "history": 0.0
+    }
+   }
+  }
+ ]
+}

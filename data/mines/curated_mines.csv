@@ -1,0 +1,120 @@
+id,name,commodity,secondary,province,locality,lat,lon,precision_m,field,method,opened,closed,status,dates_conf,max_depth_m,prod_low,prod_high,prod_unit,prod_conf,illegal_reported,illegal_last_year,flooded,sealed,notes
+ZA-GP-001,Crown Mines,gold,,GP,Johannesburg (Crown / Riverlea),-26.2230,27.9850,1500,Central Rand,underground,1909,1977,derelict,medium,2800,1000,1500,t,low,1,2023,partial,0,Once among the richest gold mines in the world; Riverlea / Zamimpilo illegal-mining raids (2023) on adjacent ground
+ZA-GP-002,Robinson Deep,gold,,GP,Johannesburg (Turffontein),-26.2390,28.0330,1500,Central Rand,underground,1898,1966,derelict,low,2500,200,600,t,low,0,,partial,0,Deep-level Central Rand mine; surface dumps reprocessed
+ZA-GP-003,City Deep,gold,,GP,Johannesburg (City Deep),-26.2290,28.0750,1500,Central Rand,underground,1899,1987,derelict,low,2500,200,600,t,low,0,,partial,0,Deep-level Central Rand mine
+ZA-GP-004,Village Main Reef,gold,,GP,Johannesburg (Village Main),-26.2140,28.0420,1500,Central Rand,underground,1888,1964,derelict,low,1500,100,300,t,low,0,,partial,0,Early outcrop mine on the Main Reef
+ZA-GP-005,Langlaagte Estate,gold,,GP,Johannesburg (Langlaagte),-26.2010,27.9970,1500,Central Rand,underground,1886,1949,derelict,low,1200,50,200,t,low,1,2023,partial,0,"Near George Harrison Park, site of the 1886 Main Reef discovery"
+ZA-GP-006,Durban Roodepoort Deep,gold,,GP,Roodepoort (Durban Deep),-26.1700,27.8650,2000,West Rand,underground,1898,2001,derelict,medium,3000,300,800,t,low,1,2024,partial,0,Informal settlements on old mine land; surface tailings retreated by DRDGOLD
+ZA-GP-007,CRD Mine (disused),gold,,GP,Florida (Roodepoort),-26.1760,27.9100,2500,Central Rand,underground,,,derelict,low,,,,t,low,1,2026,partial,0,17 Jul 2026: two SANDF members (1 Parachute Battalion) died after falling into an open vertical shaft while pursuing suspected illegal miners during Operation Prosper
+ZA-GP-008,Rand Leases,gold,,GP,Roodepoort,-26.1950,27.8850,2000,West Rand,underground,1896,1965,derelict,low,1500,100,400,t,low,0,,partial,0,
+ZA-GP-009,East Rand Proprietary Mines (ERPM),gold,,GP,Boksburg,-26.2150,28.2550,1500,East Rand,underground,1893,2008,closed,medium,3500,600,1600,t,low,1,2024,partial,0,Angelo informal settlement gas-leak deaths (Jul 2023) linked to illegal gold processing; Central Basin AMD pumping station nearby
+ZA-GP-010,Simmer and Jack,gold,,GP,Germiston,-26.2280,28.1700,1500,East Rand,underground,1887,1964,derelict,medium,1800,100,400,t,low,0,,partial,0,
+ZA-GP-011,Rose Deep,gold,,GP,Germiston,-26.2360,28.1450,1500,East Rand,underground,1895,1953,derelict,low,1800,100,300,t,low,0,,partial,0,
+ZA-GP-012,Consolidated Main Reef,gold,,GP,Johannesburg (Main Reef Road),-26.1960,27.9600,1500,Central Rand,underground,1888,1980,derelict,low,2000,200,600,t,low,1,2023,partial,0,Adjacent to Riverlea ground cleared during 2023 operations
+ZA-GP-013,Randfontein Estates,gold,uranium,GP,Randfontein,-26.1800,27.7050,2000,West Rand,underground,1889,2008,closed,low,2500,800,1500,t,low,1,2024,yes,0,West Rand Basin acid mine drainage decant began 2002
+ZA-GP-014,West Rand Consolidated,gold,uranium,GP,Krugersdorp (West Village),-26.1250,27.7600,2000,West Rand,underground,1888,1998,derelict,low,2000,200,500,t,low,1,2022,yes,0,"West Village (Krugersdorp) attack at abandoned mine dump, Jul 2022, linked to illegal miners"
+ZA-GP-015,Luipaardsvlei,gold,uranium,GP,Krugersdorp,-26.1150,27.7400,2000,West Rand,underground,1888,1993,derelict,low,1800,100,300,t,low,0,,yes,0,
+ZA-GP-016,Doornkop,gold,,GP,Soweto (Doornkop),-26.2350,27.8300,2000,West Rand,underground,1985,,operating,low,2000,50,200,t,low,0,,no,0,
+ZA-GP-017,Cooke Operations,gold,uranium,GP,Randfontein (Cooke),-26.3400,27.7300,2500,West Rand,underground,1977,2020,closed,low,2200,300,800,t,low,1,2023,partial,0,Operator has publicly reported extensive illegal-mining infiltration of Cooke shafts
+ZA-GP-018,Kloof,gold,,GP,Westonaria,-26.4050,27.5850,2500,Far West Rand,underground,1968,,operating,medium,3500,1000,2000,t,low,0,,no,0,
+ZA-GP-019,South Deep,gold,,GP,Westonaria,-26.4200,27.6700,2500,Far West Rand,underground,1961,,operating,low,3000,300,600,t,low,0,,no,0,Large remaining mechanised resource
+ZA-GP-020,Venterspost,gold,,GP,Venterspost,-26.3050,27.5300,2500,Far West Rand,underground,1939,2002,closed,low,2500,200,500,t,low,0,,partial,0,
+ZA-GP-021,Libanon,gold,,GP,Westonaria,-26.3500,27.6050,2500,Far West Rand,underground,1949,2001,closed,low,2500,200,500,t,low,0,,partial,0,
+ZA-GP-022,West Driefontein,gold,,GP,Carletonville,-26.4050,27.4900,2500,Far West Rand,underground,1952,,operating,medium,3400,1500,2500,t,low,0,,no,0,
+ZA-GP-023,East Driefontein,gold,,GP,Carletonville,-26.4100,27.4300,2500,Far West Rand,underground,1972,,operating,medium,3400,800,1500,t,low,0,,no,0,
+ZA-GP-024,Blyvooruitzicht,gold,uranium,GP,Carletonville,-26.3870,27.3820,2000,Far West Rand,underground,1942,,restarted,medium,3000,900,1500,t,low,1,2018,partial,0,Liquidated 2013; heavily mined illegally while dormant; restarted by a new operator
+ZA-GP-025,Mponeng,gold,,GP,Carletonville,-26.4290,27.4270,2000,Far West Rand,underground,1986,,operating,high,4000,500,1000,t,low,0,,no,0,Deepest mine in the world (about 4 km)
+ZA-GP-026,TauTona,gold,,GP,Carletonville,-26.4130,27.4120,2000,Far West Rand,underground,1962,2018,closed,medium,3900,600,1200,t,low,0,,partial,0,
+ZA-GP-027,Savuka,gold,,GP,Carletonville,-26.4300,27.3950,2000,Far West Rand,underground,1962,2017,closed,low,3700,200,500,t,low,0,,partial,0,
+ZA-GP-028,Kusasalethu (Elandsrand),gold,,GP,Carletonville,-26.4700,27.3600,2500,Far West Rand,underground,1978,,operating,low,3400,300,700,t,low,0,,no,0,
+ZA-GP-029,Deelkraal,gold,,GP,Carletonville,-26.4650,27.3000,2500,Far West Rand,underground,1980,2004,closed,low,3000,100,300,t,low,0,,partial,0,
+ZA-GP-030,Doornfontein,gold,,GP,Carletonville,-26.3900,27.3400,2500,Far West Rand,underground,1949,2000,closed,low,2500,200,500,t,low,0,,partial,0,
+ZA-GP-031,Grootvlei,gold,,GP,Springs,-26.2550,28.4850,2000,Far East Rand,underground,1938,2011,derelict,medium,2000,300,700,t,low,1,2024,yes,0,Collapsed under Aurora Empowerment Systems (2009–2011); infrastructure stripped
+ZA-GP-032,Marievale,gold,,GP,Nigel,-26.3600,28.5050,2500,Far East Rand,underground,1938,1997,derelict,low,1800,100,300,t,low,1,2023,yes,0,Adjacent to Marievale Bird Sanctuary wetland
+ZA-GP-033,Sub Nigel,gold,,GP,Nigel,-26.4300,28.4700,2500,Far East Rand,underground,1909,1971,derelict,low,2500,200,500,t,low,0,,yes,0,
+ZA-GP-034,Daggafontein,gold,uranium,GP,Springs,-26.3000,28.4700,2500,Far East Rand,underground,1932,1977,derelict,medium,2000,300,600,t,low,0,,yes,0,
+ZA-GP-035,Brakpan Mines,gold,,GP,Brakpan,-26.2400,28.3500,2000,Far East Rand,underground,1911,1963,derelict,low,1800,200,500,t,low,0,,yes,0,
+ZA-GP-036,Springs Mines,gold,,GP,Springs,-26.2600,28.4300,2000,Far East Rand,underground,1909,1963,derelict,low,1800,100,400,t,low,1,2023,yes,0,
+ZA-GP-037,New Kleinfontein,gold,,GP,Benoni,-26.1800,28.3000,2000,East Rand,underground,1894,1960,derelict,low,1500,100,300,t,low,0,,yes,0,
+ZA-GP-038,Van Ryn Deep,gold,,GP,Benoni,-26.1700,28.3300,2000,East Rand,underground,1902,1965,derelict,low,1500,100,300,t,low,0,,yes,0,
+ZA-GP-039,Cullinan (Premier),diamonds,,GP,Cullinan,-25.6720,28.5200,1000,Premier kimberlite,both,1903,,operating,high,1100,100,150,Mct,low,0,,no,0,Source of the 3 106 ct Cullinan Diamond (1905)
+ZA-NW-001,Stilfontein Gold Mine,gold,uranium,NW,Stilfontein,-26.8350,26.7900,2000,Klerksdorp (KOSH),underground,1952,2005,derelict,medium,2500,300,700,t,low,1,2025,yes,0,Operator collapse in 2005 (Margaret Shaft); long-running illegal mining hotspot
+ZA-NW-002,Buffelsfontein Shaft 11,gold,uranium,NW,Stilfontein,-26.8900,26.8050,1500,Klerksdorp (KOSH),underground,1957,2013,derelict,medium,2500,600,1200,t,low,1,2025,partial,0,Aug 2024 to Jan 2025 standoff; 78 bodies and 246 survivors recovered in Jan 2025 (87 deaths in total)
+ZA-NW-003,Buffelsfontein Shaft 10,gold,uranium,NW,Stilfontein,-26.8750,26.8150,1500,Klerksdorp (KOSH),underground,1957,2013,derelict,medium,2500,,,t,low,1,2025,partial,0,Linked workings; reports allege bodies remain underground after the 2025 sweep
+ZA-NW-004,Hartebeestfontein,gold,uranium,NW,Klerksdorp,-26.8150,26.7200,2000,Klerksdorp (KOSH),underground,1955,2013,derelict,low,2600,600,1200,t,low,1,2024,partial,0,
+ZA-NW-005,Great Noligwa (Vaal Reefs),gold,uranium,NW,Orkney,-26.9900,26.7000,2500,Klerksdorp (KOSH),underground,1972,2020,closed,low,2600,800,2000,t,low,0,,partial,0,Part of the former Vaal Reefs complex
+ZA-FS-021,Kopanang,gold,,FS,Orkney,-27.0000,26.7350,2500,Klerksdorp (KOSH),underground,1984,2018,care_maintenance,low,2300,300,600,t,low,0,,partial,0,Vaal River operations straddle the NW/FS boundary; position falls on the Free State bank
+ZA-FS-022,Moab Khotsong,gold,uranium,FS,Orkney,-26.9950,26.8000,2500,Klerksdorp (KOSH),underground,2003,,operating,medium,3000,200,500,t,low,0,,no,0,Vaal River operations straddle the NW/FS boundary; position falls on the Free State bank
+ZA-NW-008,Tau Lekoa,gold,,NW,Orkney,-26.9500,26.6500,2500,Klerksdorp (KOSH),underground,1990,2018,closed,low,1500,50,150,t,low,0,,partial,0,
+ZA-NW-009,Orkney (Pamodzi),gold,,NW,Orkney (Kanana),-26.9700,26.6650,2000,Klerksdorp (KOSH),underground,1940,2009,derelict,low,2000,200,500,t,low,1,2023,partial,0,Operator liquidated in 2009; persistent illegal mining in surrounding settlements
+ZA-NW-010,Rustenburg Operations,pgm,chrome,NW,Rustenburg,-25.6600,27.3000,3000,Bushveld Complex (Western Limb),underground,1929,,operating,medium,1500,50,100,Moz,low,0,,no,0,
+ZA-NW-011,Impala Rustenburg,pgm,chrome,NW,Rustenburg (Bleskop),-25.5300,27.2000,3000,Bushveld Complex (Western Limb),underground,1969,,operating,medium,1500,80,150,Moz,low,0,,no,0,
+ZA-NW-012,Marikana,pgm,chrome,NW,Marikana,-25.7000,27.4800,3000,Bushveld Complex (Western Limb),underground,1971,,operating,low,1500,40,80,Moz,low,0,,no,0,16 Aug 2012 Marikana massacre: 34 striking mineworkers killed by police
+ZA-NW-013,Pilanesberg Platinum,pgm,,NW,Pilanesberg,-25.1500,26.9800,3000,Bushveld Complex (Western Limb),open_pit,2010,,operating,low,300,0.5,2,Moz,low,0,,no,0,
+ZA-NW-014,Lichtenburg Alluvial Diggings,diamonds,,NW,Lichtenburg (Grasfontein),-26.1500,26.1600,5000,Lichtenburg alluvials,alluvial,1926,1935,derelict,medium,30,5,10,Mct,low,0,,no,0,1926 Grasfontein diamond rush drew tens of thousands of diggers
+ZA-NW-015,Pomfret Asbestos,asbestos,,NW,Pomfret,-25.8300,23.5300,3000,Northern Cape crocidolite belt,underground,1955,1986,derelict,low,300,300,800,kt,low,0,,no,0,Crocidolite (blue asbestos); listed derelict asbestos site
+ZA-FS-001,President Brand,gold,uranium,FS,Welkom,-27.9700,26.7000,2000,Free State (Welkom),underground,1954,2012,closed,low,2400,600,1200,t,low,1,2024,partial,0,
+ZA-FS-002,President Steyn,gold,uranium,FS,Welkom,-27.9850,26.7500,2000,Free State (Welkom),underground,1954,2005,closed,low,2500,600,1200,t,low,1,2024,partial,0,
+ZA-FS-003,Free State Geduld,gold,uranium,FS,Odendaalsrus,-27.8900,26.7250,2000,Free State (Welkom),underground,1956,2003,closed,low,2400,600,1200,t,low,1,2023,partial,0,
+ZA-FS-004,Western Holdings,gold,,FS,Welkom,-27.9500,26.6900,2000,Free State (Welkom),underground,1953,1999,closed,low,2200,300,700,t,low,0,,partial,0,
+ZA-FS-005,St Helena,gold,,FS,Welkom,-28.0050,26.6800,2000,Free State (Welkom),underground,1951,2015,derelict,low,2300,300,600,t,low,1,2024,partial,0,
+ZA-FS-006,Harmony (Virginia),gold,uranium,FS,Virginia,-28.1000,26.8700,2000,Free State (Welkom),underground,1954,2010,closed,low,2200,500,1000,t,low,1,2024,partial,0,
+ZA-FS-007,Merriespruit,gold,,FS,Virginia,-28.1150,26.8550,2000,Free State (Welkom),underground,1956,1996,closed,low,2000,100,300,t,low,0,,partial,0,22 Feb 1994 tailings dam failure killed 17 people
+ZA-FS-008,Loraine,gold,,FS,Allanridge,-27.7550,26.6250,2500,Free State (Welkom),underground,1955,2003,closed,low,2000,100,300,t,low,0,,partial,0,
+ZA-FS-009,Beatrix,gold,,FS,Theunissen,-28.2500,26.7700,3000,Free State (Welkom),underground,1985,,operating,medium,2200,300,700,t,low,0,,no,0,
+ZA-FS-010,Tshepong,gold,,FS,Odendaalsrus,-27.8400,26.6550,2500,Free State (Welkom),underground,1984,,operating,low,2400,300,700,t,low,0,,no,0,
+ZA-FS-011,Phakisa,gold,,FS,Odendaalsrus,-27.8600,26.6900,2500,Free State (Welkom),underground,2008,,operating,medium,2400,50,200,t,low,0,,no,0,
+ZA-FS-012,Joel,gold,,FS,Theunissen,-28.4000,26.8000,3000,Free State (Welkom),underground,1987,,operating,low,1400,50,200,t,low,0,,no,0,
+ZA-FS-013,Masimong,gold,,FS,Welkom,-27.9300,26.8200,2500,Free State (Welkom),underground,1984,,operating,low,2000,100,300,t,low,0,,no,0,Approaching end of life
+ZA-FS-014,Bambanani,gold,,FS,Welkom,-27.9600,26.7900,2500,Free State (Welkom),underground,1965,2023,care_maintenance,low,2300,100,400,t,low,1,2023,partial,0,
+ZA-FS-015,Unisel,gold,,FS,Welkom,-28.0300,26.7700,2500,Free State (Welkom),underground,1980,2021,closed,low,2000,50,200,t,low,0,,partial,0,
+ZA-FS-016,Jagersfontein,diamonds,,FS,Jagersfontein,-29.7680,25.4230,1000,Jagersfontein kimberlite,both,1870,1971,closed,medium,760,9,11,Mct,low,0,,no,0,Underground closed 1971; tailings retreatment ended after the 11 Sep 2022 tailings dam failure
+ZA-FS-017,Koffiefontein,diamonds,,FS,Koffiefontein,-29.4120,25.0050,1000,Koffiefontein kimberlite,both,1870,2022,care_maintenance,low,600,5,10,Mct,low,0,,no,0,
+ZA-FS-018,Voorspoed,diamonds,,FS,Kroonstad,-27.4800,27.3700,3000,Voorspoed kimberlite,open_pit,2008,2018,closed,low,200,0.3,0.8,Mct,low,0,,no,0,Historic workings (1906) re-opened 2008
+ZA-FS-019,Coalbrook North Colliery,coal,,FS,Sasolburg (Coalbrook),-26.8600,27.7700,3000,Vereeniging-Sasolburg coalfield,underground,1905,1960,closed,medium,180,10,40,Mt,low,0,,yes,1,"21 Jan 1960 pillar collapse killed 435 miners, the worst mining disaster in SA history"
+ZA-FS-020,Sigma Colliery,coal,,FS,Sasolburg,-26.8100,27.8600,3000,Vereeniging-Sasolburg coalfield,underground,1952,2006,closed,low,200,50,150,Mt,low,0,,partial,1,
+ZA-MP-001,Sheba,gold,,MP,Barberton (Eureka City),-25.7130,31.1500,3000,Barberton Greenstone Belt,underground,1885,,operating,medium,1200,50,150,t,low,1,2024,no,0,One of the oldest operating gold mines in the world
+ZA-MP-002,Fairview,gold,,MP,Barberton,-25.7550,31.1050,3000,Barberton Greenstone Belt,underground,1884,,operating,medium,2000,100,250,t,low,1,2023,no,0,
+ZA-MP-003,New Consort,gold,,MP,Barberton,-25.7100,31.0000,3000,Barberton Greenstone Belt,underground,1918,,operating,low,1000,30,100,t,low,0,,no,0,
+ZA-MP-004,Lily Mine,gold,,MP,Louisville (Barberton),-25.6150,31.2350,3000,Barberton Greenstone Belt,underground,2000,2016,derelict,medium,500,3,10,t,low,0,,no,0,5 Feb 2016 crown-pillar collapse; three workers in a surface container were never recovered
+ZA-MP-005,TGME Pilgrim's Rest,gold,,MP,Pilgrim's Rest,-24.9100,30.7600,3000,Sabie–Pilgrim's Rest,underground,1873,2015,derelict,low,600,100,250,t,low,1,2023,no,0,Heritage gold-rush town; illegal mining reported in surrounding adits
+ZA-MP-006,Msauli Asbestos,asbestos,,MP,Barberton (Diepgezet),-25.9200,30.9500,3000,Barberton Greenstone Belt,underground,1940,2001,derelict,low,500,500,1500,kt,low,0,,no,0,Chrysotile asbestos
+ZA-MP-007,Transvaal & Delagoa Bay Colliery,coal,,MP,eMalahleni (Witbank),-25.8800,29.1600,3000,Witbank coalfield,underground,1896,1953,derelict,low,120,20,60,Mt,low,1,2023,no,0,"Old Witbank workings: spontaneous combustion, subsidence and illegal coal digging"
+ZA-MP-008,Middelburg Mine,coal,,MP,Middelburg,-25.8000,29.4500,3000,Witbank coalfield,open_pit,1982,,operating,low,80,300,600,Mt,low,0,,no,0,
+ZA-MP-009,Kriel Colliery,coal,,MP,Kriel,-26.2500,29.2500,3000,Highveld coalfield,both,1975,,operating,low,150,200,400,Mt,low,0,,no,0,
+ZA-MP-010,Arnot Colliery,coal,,MP,Arnot,-25.9400,29.8000,3000,Witbank coalfield,underground,1974,2015,closed,low,150,100,250,Mt,low,0,,partial,1,
+ZA-MP-011,Secunda Collieries,coal,,MP,Secunda,-26.5300,29.1800,4000,Highveld coalfield,underground,1977,,operating,medium,250,1000,2000,Mt,low,0,,no,0,
+ZA-LP-013,Two Rivers,pgm,chrome,LP,Steelpoort (Dwarsrivier),-24.9300,30.1100,3000,Bushveld Complex (Eastern Limb),underground,2007,,operating,low,800,3,8,Moz,low,0,,no,0,Steelpoort valley on the Limpopo/Mpumalanga boundary; position falls in Limpopo
+ZA-LP-001,Venetia,diamonds,,LP,Musina (Alldays road),-22.4400,29.3100,2000,Venetia kimberlite cluster,both,1992,,operating,high,1000,100,200,Mct,low,0,,no,0,Transitioned from open pit to underground in 2023
+ZA-LP-002,Palabora,copper,"phosphate,vermiculite",LP,Phalaborwa,-23.9950,31.1250,2000,Phalaborwa Complex,both,1966,,operating,medium,1500,3000,5000,kt,low,0,,no,0,Open pit deepened to about 760 m before block-cave underground
+ZA-LP-003,Mogalakwena,pgm,,LP,Mokopane,-24.0300,28.9500,4000,Bushveld Complex (Northern Limb),open_pit,1993,,operating,low,300,20,50,Moz,low,0,,no,0,
+ZA-LP-004,Amandelbult,pgm,chrome,LP,Northam,-24.8000,27.3300,3000,Bushveld Complex (Western Limb),underground,1976,,operating,low,1200,40,80,Moz,low,0,,no,0,
+ZA-LP-005,Modikwa,pgm,,LP,Burgersfort,-24.6500,30.1200,3000,Bushveld Complex (Eastern Limb),underground,2002,,operating,low,800,3,8,Moz,low,0,,no,0,
+ZA-LP-006,Bokoni,pgm,,LP,Atok,-24.3000,30.0000,4000,Bushveld Complex (Eastern Limb),underground,1969,2017,care_maintenance,low,800,2,6,Moz,low,0,,no,0,
+ZA-LP-007,Grootegeluk,coal,,LP,Lephalale,-23.6600,27.5500,3000,Waterberg coalfield,open_pit,1980,,operating,medium,150,500,900,Mt,low,0,,no,0,
+ZA-LP-008,Thabazimbi Iron Ore,iron,,LP,Thabazimbi,-24.6150,27.4000,3000,Thabazimbi,open_pit,1934,2015,closed,medium,250,150,250,Mt,low,0,,no,0,
+ZA-LP-009,Penge Asbestos,asbestos,,LP,Penge,-24.3700,30.3000,3000,Transvaal amosite field,underground,1914,1992,derelict,low,400,1000,3000,kt,low,0,,no,0,Amosite (brown asbestos) — severe community health legacy
+ZA-LP-010,Mafefe Asbestos,asbestos,,LP,Mafefe,-24.2700,29.9500,4000,Transvaal crocidolite field,underground,1930,1975,derelict,low,200,50,200,kt,low,0,,no,0,Crocidolite; listed derelict asbestos site
+ZA-LP-011,Zaaiplaats Tin,tin,,LP,Mokopane district,-24.0300,28.8000,4000,Bushveld granites,underground,1908,1989,derelict,low,500,5,20,kt,low,0,,no,0,
+ZA-LP-012,Rooiberg Tin,tin,,LP,Rooiberg,-24.7700,27.7300,3000,Bushveld granites,underground,1905,1993,closed,low,800,20,60,kt,low,0,,no,0,
+ZA-NC-001,Kimberley Mine (Big Hole),diamonds,,NC,Kimberley,-28.7383,24.7585,200,Kimberley kimberlite cluster,both,1871,1914,rehabilitated,high,1097,14.5,14.5,Mct,high,0,,yes,1,About 22.5 Mt excavated by hand; 2 722 kg (14.5 Mct) of diamonds; now a heritage site
+ZA-NC-002,De Beers Mine,diamonds,,NC,Kimberley,-28.7240,24.7820,1000,Kimberley kimberlite cluster,both,1871,2005,closed,low,800,20,60,Mct,low,1,2024,partial,0,Illegal diggers reported on Kimberley tailings and old workings
+ZA-NC-003,Dutoitspan,diamonds,,NC,Kimberley,-28.7480,24.7900,1000,Kimberley kimberlite cluster,both,1870,,care_maintenance,low,800,20,60,Mct,low,1,2024,partial,0,
+ZA-NC-004,Bultfontein,diamonds,,NC,Kimberley,-28.7580,24.8000,1000,Kimberley kimberlite cluster,both,1869,,operating,low,800,20,60,Mct,low,0,,partial,0,
+ZA-NC-005,Wesselton,diamonds,,NC,Kimberley,-28.7630,24.8250,1000,Kimberley kimberlite cluster,both,1890,2005,closed,low,900,20,60,Mct,low,1,2023,partial,0,
+ZA-NC-006,Finsch,diamonds,,NC,Lime Acres,-28.3800,23.4500,2000,Finsch kimberlite,both,1967,,operating,medium,900,80,150,Mct,low,0,,no,0,
+ZA-NC-007,Kleinzee,diamonds,,NC,Kleinzee,-29.6800,17.0700,3000,Namaqualand coastal placers,alluvial,1927,2011,closed,low,30,15,40,Mct,low,1,2024,no,0,Namaqualand coastal diamond fields: illegal diggers widely reported
+ZA-NC-008,Koingnaas,diamonds,,NC,Koingnaas,-30.1900,17.2800,3000,Namaqualand coastal placers,alluvial,1970,2011,closed,low,30,5,20,Mct,low,1,2023,no,0,
+ZA-NC-009,Alexander Bay (Alexkor),diamonds,,NC,Alexander Bay,-28.6000,16.4900,4000,Namaqualand coastal placers,alluvial,1928,,operating,medium,30,5,15,Mct,low,1,2024,no,0,State-owned operator; illegal diamond mining reported along the lower Orange River coast
+ZA-NC-010,Sishen,iron,,NC,Kathu,-27.7500,22.9900,3000,Northern Cape iron ore,open_pit,1953,,operating,high,400,1000,1500,Mt,low,0,,no,0,
+ZA-NC-011,Kolomela,iron,,NC,Postmasburg,-28.3500,22.9800,3000,Northern Cape iron ore,open_pit,2011,,operating,high,250,150,250,Mt,low,0,,no,0,
+ZA-NC-012,Mamatwan,manganese,,NC,Hotazel,-27.3800,22.9700,3000,Kalahari Manganese Field,open_pit,1964,,operating,medium,100,100,200,Mt,low,0,,no,0,
+ZA-NC-013,Nchwaning,manganese,,NC,Black Rock,-27.1300,22.8500,3000,Kalahari Manganese Field,underground,1972,,operating,low,500,50,150,Mt,low,0,,no,0,
+ZA-NC-014,O'okiep Copper,copper,,NC,Okiep,-29.6000,17.8800,3000,Namaqualand copper district,underground,1862,2003,closed,low,1200,1000,2000,kt,low,0,,no,0,Historic copper district mined since the 1850s
+ZA-NC-015,Prieska Copper,copper,zinc,NC,Copperton,-29.9300,22.3100,2000,Areachap belt,underground,1972,1991,closed,medium,1100,300,500,kt,low,0,,yes,0,Being redeveloped by a new operator
+ZA-NC-016,Black Mountain,zinc,"lead,copper",NC,Aggeneys,-29.2400,18.8400,2000,Aggeneys–Gamsberg,underground,1979,,operating,high,1500,500,1500,kt,low,0,,no,0,
+ZA-NC-017,Gamsberg,zinc,,NC,Aggeneys,-29.2500,18.9700,2000,Aggeneys–Gamsberg,open_pit,2019,,operating,high,300,300,800,kt,low,0,,no,0,
+ZA-NC-018,Koegas Asbestos,asbestos,,NC,Koegas,-29.3000,22.3500,4000,Northern Cape crocidolite belt,underground,1893,1979,rehabilitated,low,200,300,800,kt,low,0,,no,1,Crocidolite; partially rehabilitated
+ZA-NC-019,Kuruman Cape Blue,asbestos,,NC,Kuruman,-27.4500,23.4200,4000,Northern Cape crocidolite belt,underground,1925,1997,derelict,low,200,100,500,kt,low,0,,no,0,Crocidolite (blue asbestos) near Kuruman
+ZA-KZ-001,Hlobane Colliery,coal,,KZN,Vryheid,-27.7000,31.0000,3000,Vryheid coalfield,underground,1907,1998,derelict,low,300,30,80,Mt,low,0,,partial,0,12 Sep 1983 methane explosion killed 68 miners
+ZA-KZ-002,Durnacol,coal,,KZN,Dannhauser,-27.9800,30.0500,3000,Klip River coalfield,underground,1917,1999,derelict,low,300,20,60,Mt,low,0,,partial,0,

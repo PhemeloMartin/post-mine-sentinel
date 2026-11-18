@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "description": "Proposed Post-Mine Sentinel national monitoring network (pilot design). Hubs are Sentinel Operations Centres (SOCs); deployments are proposed pilot sensor fields at high-RAI sites.",
+  "hubs": [
+    { "id": "SOC-NAT", "name": "National SOC (Johannesburg)", "tier": 0, "lat": -26.1929, "lon": 28.0305, "role": "National fusion, analytics, audit and inter-agency liaison (SAPS, DMPR, CGS, SANDF)" },
+    { "id": "SOC-WR", "name": "West Rand SOC (Krugersdorp)", "tier": 1, "lat": -26.0855, "lon": 27.7737, "role": "Central & West Rand fields" },
+    { "id": "SOC-ER", "name": "East Rand SOC (Boksburg)", "tier": 1, "lat": -26.2125, "lon": 28.2596, "role": "East & Far East Rand fields" },
+    { "id": "SOC-KOSH", "name": "KOSH SOC (Klerksdorp)", "tier": 1, "lat": -26.8521, "lon": 26.6667, "role": "Klerksdorp-Orkney-Stilfontein-Hartebeestfontein fields" },
+    { "id": "SOC-FS", "name": "Free State SOC (Welkom)", "tier": 1, "lat": -27.9774, "lon": 26.7351, "role": "Welkom / Virginia goldfield" },
+    { "id": "SOC-NC", "name": "Northern Cape SOC (Kimberley)", "tier": 1, "lat": -28.7282, "lon": 24.7499, "role": "Kimberley diamond fields and Namaqualand relay" },
+    { "id": "SOC-MP", "name": "Lowveld SOC (Mbombela)", "tier": 1, "lat": -25.4753, "lon": 30.9694, "role": "Barberton & Pilgrim's Rest goldfields, Witbank coalfield" },
+    { "id": "RLY-NAM", "name": "Namaqualand Relay (Springbok)", "tier": 2, "lat": -29.6643, "lon": 17.8865, "role": "LEO-satellite backhaul relay for coastal diamond fields" }
+  ],
+  "backbone": [
+    { "from": "SOC-NAT", "to": "SOC-WR", "medium": "fibre", "capacityMbps": 1000 },
+    { "from": "SOC-NAT", "to": "SOC-ER", "medium": "fibre", "capacityMbps": 1000 },
+    { "from": "SOC-NAT", "to": "SOC-KOSH", "medium": "fibre", "capacityMbps": 500 },
+    { "from": "SOC-NAT", "to": "SOC-FS", "medium": "fibre", "capacityMbps": 500 },
+    { "from": "SOC-NAT", "to": "SOC-NC", "medium": "fibre", "capacityMbps": 200 },
+    { "from": "SOC-NAT", "to": "SOC-MP", "medium": "fibre", "capacityMbps": 500 },
+    { "from": "SOC-NC", "to": "RLY-NAM", "medium": "leo_satellite", "capacityMbps": 50 },
+    { "from": "SOC-KOSH", "to": "SOC-FS", "medium": "microwave", "capacityMbps": 300 }
+  ],
+  "deployments": [
+    { "mineId": "ZA-NW-002", "hub": "SOC-KOSH", "spiders": 24, "anchors": 2, "backhaul": "lte", "phase": 1 },
+    { "mineId": "ZA-NW-003", "hub": "SOC-KOSH", "spiders": 14, "anchors": 1, "backhaul": "lte", "phase": 1 },
+    { "mineId": "ZA-NW-001", "hub": "SOC-KOSH", "spiders": 16, "anchors": 2, "backhaul": "lte", "phase": 1 },
+    { "mineId": "ZA-NW-004", "hub": "SOC-KOSH", "spiders": 12, "anchors": 1, "backhaul": "lte", "phase": 2 },
+    { "mineId": "ZA-GP-001", "hub": "SOC-WR", "spiders": 20, "anchors": 2, "backhaul": "fibre", "phase": 1 },
+    { "mineId": "ZA-GP-007", "hub": "SOC-WR", "spiders": 14, "anchors": 2, "backhaul": "lte", "phase": 1 },
+    { "mineId": "ZA-GP-006", "hub": "SOC-WR", "spiders": 12, "anchors": 1, "backhaul": "lte", "phase": 2 },
+    { "mineId": "ZA-GP-012", "hub": "SOC-WR", "spiders": 10, "anchors": 1, "backhaul": "lte", "phase": 2 },
+    { "mineId": "ZA-GP-009", "hub": "SOC-ER", "spiders": 18, "anchors": 2, "backhaul": "fibre", "phase": 1 },
+    { "mineId": "ZA-GP-031", "hub": "SOC-ER", "spiders": 14, "anchors": 1, "backhaul": "lte", "phase": 2 },
+    { "mineId": "ZA-FS-002", "hub": "SOC-FS", "spiders": 12, "anchors": 1, "backhaul": "lte", "phase": 2 },
+    { "mineId": "ZA-FS-005", "hub": "SOC-FS", "spiders": 10, "anchors": 1, "backhaul": "lte", "phase": 2 },
+    { "mineId": "ZA-NC-002", "hub": "SOC-NC", "spiders": 10, "anchors": 1, "backhaul": "lte", "phase": 2 },
+    { "mineId": "ZA-NC-007", "hub": "RLY-NAM", "spiders": 16, "anchors": 2, "backhaul": "leo_satellite", "phase": 3 },
+    { "mineId": "ZA-MP-005", "hub": "SOC-MP", "spiders": 10, "anchors": 1, "backhaul": "lte", "phase": 3 },
+    { "mineId": "ZA-MP-007", "hub": "SOC-MP", "spiders": 8, "anchors": 1, "backhaul": "lte", "phase": 3 }
+  ]
+}
