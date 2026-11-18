@@ -9,7 +9,7 @@ COPY data/ /repo/data/
 COPY apps/command-center/ ./
 RUN npm run build
 
-FROM nginxinc/nginx-unprivileged:1.27-alpine
+FROM nginxinc/nginx-unprivileged:1.31-alpine
 COPY apps/command-center/nginx.conf /etc/nginx/conf.d/default.conf
 COPY apps/command-center/security-headers.conf /etc/nginx/snippets/security-headers.conf
 COPY --from=build /repo/apps/command-center/dist /usr/share/nginx/html
