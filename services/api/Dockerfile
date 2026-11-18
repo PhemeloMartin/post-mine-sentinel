@@ -1,14 +1,14 @@
 # syntax=docker/dockerfile:1.7
 # Build context: repository root (the API depends on ml/ and data/).
 #   docker build -f services/api/Dockerfile -t sentinel-api .
-FROM python:3.12-slim AS build
+FROM python:3.15-slim AS build
 ENV PIP_NO_CACHE_DIR=1 PIP_DISABLE_PIP_VERSION_CHECK=1
 WORKDIR /src
 COPY ml/ ml/
 COPY services/api/ services/api/
 RUN python -m venv /venv && /venv/bin/pip install ./ml ./services/api
 
-FROM python:3.12-slim AS runtime
+FROM python:3.15-slim AS runtime
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PATH=/venv/bin:$PATH \
     SENTINEL_DATA_DIR=/app/data
 RUN groupadd --system --gid 10001 sentinel && useradd --system --uid 10001 --gid sentinel --no-create-home sentinel
