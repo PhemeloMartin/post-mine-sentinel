@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1.7
 # Build context: repository root (the app bundles the canonical datasets from /data).
 #   docker build -f apps/command-center/Dockerfile -t sentinel-console .
-FROM node:20-alpine AS build
+FROM node:26-alpine AS build
 WORKDIR /repo/apps/command-center
 COPY apps/command-center/package.json apps/command-center/package-lock.json ./
 RUN npm ci --no-audit --no-fund
