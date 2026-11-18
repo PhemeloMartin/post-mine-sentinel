@@ -24,7 +24,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "ruff>=0.5"]
+dev = ["pytest>=9.2.0", "ruff>=0.5"]
 
 [tool.setuptools.packages.find]
 include = ["app*"]
