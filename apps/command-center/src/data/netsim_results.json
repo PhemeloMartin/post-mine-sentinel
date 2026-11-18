@@ -1,0 +1,116 @@
+{
+  "e1_scalability": [
+    {
+      "nodes": 12,
+      "packets_generated": 1139,
+      "packet_delivery_ratio": 0.993,
+      "latency_p50_s": 0.247,
+      "latency_p95_s": 1.385,
+      "mean_hops": 1.0,
+      "collisions": 5,
+      "duty_cycle_deferrals": 0,
+      "battery_life_days": 501.2
+    },
+    {
+      "nodes": 24,
+      "packets_generated": 2370,
+      "packet_delivery_ratio": 0.9945,
+      "latency_p50_s": 0.247,
+      "latency_p95_s": 1.103,
+      "mean_hops": 1.05,
+      "collisions": 24,
+      "duty_cycle_deferrals": 0,
+      "battery_life_days": 494.5
+    },
+    {
+      "nodes": 48,
+      "packets_generated": 4661,
+      "packet_delivery_ratio": 0.9983,
+      "latency_p50_s": 0.247,
+      "latency_p95_s": 1.036,
+      "mean_hops": 1.04,
+      "collisions": 79,
+      "duty_cycle_deferrals": 0,
+      "battery_life_days": 497.1
+    },
+    {
+      "nodes": 96,
+      "packets_generated": 9125,
+      "packet_delivery_ratio": 0.999,
+      "latency_p50_s": 0.247,
+      "latency_p95_s": 1.01,
+      "mean_hops": 1.06,
+      "collisions": 393,
+      "duty_cycle_deferrals": 0,
+      "battery_life_days": 470.6
+    }
+  ],
+  "e2_spreading_factor": [
+    {
+      "sf": 7,
+      "toa_ms": 61.7,
+      "sensitivity_dbm": -124.5,
+      "range_m_n3": 2382,
+      "packets_per_hour_1pct": 583.5
+    },
+    {
+      "sf": 8,
+      "toa_ms": 113.2,
+      "sensitivity_dbm": -127.0,
+      "range_m_n3": 2886,
+      "packets_per_hour_1pct": 318.2
+    },
+    {
+      "sf": 9,
+      "toa_ms": 205.8,
+      "sensitivity_dbm": -129.5,
+      "range_m_n3": 3497,
+      "packets_per_hour_1pct": 174.9
+    },
+    {
+      "sf": 10,
+      "toa_ms": 370.7,
+      "sensitivity_dbm": -132.0,
+      "range_m_n3": 4237,
+      "packets_per_hour_1pct": 97.1
+    },
+    {
+      "sf": 11,
+      "toa_ms": 823.3,
+      "sensitivity_dbm": -134.5,
+      "range_m_n3": 5133,
+      "packets_per_hour_1pct": 43.7
+    },
+    {
+      "sf": 12,
+      "toa_ms": 1482.8,
+      "sensitivity_dbm": -137.0,
+      "range_m_n3": 6218,
+      "packets_per_hour_1pct": 24.3
+    }
+  ],
+  "e3_resilience": [
+    {
+      "gateways": 1,
+      "packets_generated": 1705,
+      "packet_delivery_ratio": 0.4944,
+      "latency_p50_s": 0.247,
+      "latency_p95_s": 1.574,
+      "mean_hops": 1.22,
+      "collisions": 4,
+      "duty_cycle_deferrals": 0,
+      "battery_life_days": 523.0
+    },
+    {
+      "gateways": 2,
+      "packets_generated": 1747,
+      "packet_delivery_ratio": 0.9983,
+      "latency_p50_s": 0.247,
+      "latency_p95_s": 0.879,
+      "mean_hops": 1.07,
+      "collisions": 10,
+      "duty_cycle_deferrals": 0,
+      "battery_life_days": 513.1
+    }
+  ]
+}
